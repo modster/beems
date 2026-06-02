@@ -1,0 +1,815 @@
+[
+    {
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[540,1200]",
+        "resource-id": "scrim_behind",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "focusable"
+        ],
+        "center": "[540,1200]",
+        "resource-id": "scrim_notifications",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "focusable"
+        ],
+        "center": "[540,1200]",
+        "resource-id": "scrim_in_front",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "focusable"
+        ],
+        "center": "[540,150]",
+        "resource-id": "split_shade_status_bar",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "clickable",
+            "focusable",
+            "long-clickable"
+        ],
+        "center": "[540,2100]",
+        "resource-id": "expandableNotificationRow",
+        "key": 3506402
+    },
+    {
+        "text": "4:25?",
+        "content-desc": "4:25?PM",
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[177,163]",
+        "resource-id": "clock",
+        "key": 3506402
+    },
+    {
+        "text": "Tue, Jun 2",
+        "center": "[137,269]",
+        "resource-id": "date",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Battery charging, 96 percent.",
+        "center": "[986,269]",
+        "resource-id": "batteryRemainingIcon",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "focusable"
+        ],
+        "center": "[540,1065]",
+        "resource-id": "expanded_qs_scroll_view",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[936,180]",
+        "resource-id": "carrier1",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Phone one bar.",
+        "center": "[705,270]",
+        "resource-id": "mobile_combo",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Alarm set for Tue 7:45 AM.",
+        "center": "[819,270]",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Ringer silent.",
+        "center": "[884,270]",
+        "key": 3506402
+    },
+    {
+        "text": "96%",
+        "center": "[995,270]",
+        "resource-id": "battery_percentage_view",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[870,2270]",
+        "resource-id": "settings_button_container",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[990,2270]",
+        "resource-id": "pm_lite",
+        "key": 3506402
+    },
+    {
+        "text": "chatr",
+        "state": [
+            "selected"
+        ],
+        "center": "[881,179]",
+        "resource-id": "shade_carrier_text",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "focusable"
+        ],
+        "center": "[540,1125]",
+        "resource-id": "quick_settings_panel",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Open settings.",
+        "center": "[870,2270]",
+        "resource-id": "icon",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Power menu",
+        "center": "[990,2270]",
+        "resource-id": "icon",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Display brightness",
+        "center": "[540,400]",
+        "resource-id": "brightness_slider",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "focusable",
+            "scrollable"
+        ],
+        "center": "[540,930]",
+        "bounds": "[40,500][1040,1360]",
+        "resource-id": "qs_pager",
+        "key": 3506402
+    },
+    {
+        "text": "Display brightness",
+        "interactions": [
+            "focusable"
+        ],
+        "center": "[540,400]",
+        "resource-id": "slider",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[540,930]",
+        "resource-id": "tile_page",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[105,2050]",
+        "resource-id": "alternate_expand_target",
+        "key": 3506402
+    },
+    {
+        "content-desc": "LTE+",
+        "center": "[975,180]",
+        "resource-id": "mobile_type",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Phone one bar., ",
+        "center": "[1016,180]",
+        "resource-id": "mobile_signal",
+        "key": 3506402
+    },
+    {
+        "text": "Show layout bounds, Off",
+        "content-desc": "Show layout bounds",
+        "interactions": [
+            "checkable",
+            "clickable",
+            "focusable",
+            "long-clickable"
+        ],
+        "center": "[285,600]",
+        "key": 3506402
+    },
+    {
+        "text": "Wireless debugging, Off",
+        "content-desc": "Wireless debugging",
+        "interactions": [
+            "checkable",
+            "clickable",
+            "focusable",
+            "long-clickable"
+        ],
+        "center": "[795,600]",
+        "key": 3506402
+    },
+    {
+        "text": "Flashlight, Off",
+        "content-desc": "Flashlight",
+        "interactions": [
+            "checkable",
+            "clickable",
+            "focusable"
+        ],
+        "center": "[285,820]",
+        "key": 3506402
+    },
+    {
+        "text": "Wi-Fi, Off",
+        "content-desc": "Wi-Fi,",
+        "interactions": [
+            "checkable",
+            "clickable",
+            "focusable",
+            "long-clickable"
+        ],
+        "center": "[795,820]",
+        "key": 3506402
+    },
+    {
+        "text": "Mobile data, LTE+",
+        "content-desc": "Mobile data",
+        "interactions": [
+            "checkable",
+            "clickable",
+            "focusable",
+            "long-clickable"
+        ],
+        "state": [
+            "checked"
+        ],
+        "center": "[285,1040]",
+        "key": 3506402
+    },
+    {
+        "text": "Bluetooth, On",
+        "content-desc": "Bluetooth.",
+        "interactions": [
+            "checkable",
+            "clickable",
+            "focusable",
+            "long-clickable"
+        ],
+        "state": [
+            "checked"
+        ],
+        "center": "[795,1040]",
+        "key": 3506402
+    },
+    {
+        "text": "Do Not Disturb, Off",
+        "content-desc": "Do Not Disturb.",
+        "interactions": [
+            "checkable",
+            "clickable",
+            "focusable",
+            "long-clickable"
+        ],
+        "center": "[285,1260]",
+        "key": 3506402
+    },
+    {
+        "text": "Auto-rotate, On",
+        "content-desc": "Auto-rotate screen",
+        "interactions": [
+            "checkable",
+            "clickable",
+            "focusable",
+            "long-clickable"
+        ],
+        "state": [
+            "checked"
+        ],
+        "center": "[795,1260]",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "focusable"
+        ],
+        "center": "[540,1730]",
+        "resource-id": "media_carousel_scroller",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[105,600]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[315,600]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[615,600]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[825,600]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[105,820]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[315,820]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[615,820]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[825,820]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[105,1040]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[315,1040]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[615,1040]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[825,1040]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[105,1260]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[290,1260]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[475,1260]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[615,1260]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[825,1260]",
+        "key": 3506402
+    },
+    {
+        "text": "14 (U1TOS34.1-157-5-25)",
+        "interactions": [
+            "clickable",
+            "focusable",
+            "long-clickable"
+        ],
+        "state": [
+            "selected"
+        ],
+        "center": "[270,1420]",
+        "resource-id": "build",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Page 1 of 4",
+        "center": "[540,1420]",
+        "resource-id": "footer_page_indicator",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Expand",
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[970,2050]",
+        "resource-id": "expand_button",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[105,600]",
+        "resource-id": "icon",
+        "key": 3506402
+    },
+    {
+        "text": "Show layout bounds",
+        "state": [
+            "selected"
+        ],
+        "center": "[315,572]",
+        "resource-id": "tile_label",
+        "key": 3506402
+    },
+    {
+        "text": "Off",
+        "state": [
+            "selected"
+        ],
+        "center": "[315,627]",
+        "resource-id": "app_label",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[615,600]",
+        "resource-id": "icon",
+        "key": 3506402
+    },
+    {
+        "text": "Wireless debugging",
+        "state": [
+            "selected"
+        ],
+        "center": "[825,572]",
+        "resource-id": "tile_label",
+        "key": 3506402
+    },
+    {
+        "text": "Off",
+        "state": [
+            "selected"
+        ],
+        "center": "[825,627]",
+        "resource-id": "app_label",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[105,820]",
+        "resource-id": "icon",
+        "key": 3506402
+    },
+    {
+        "text": "Flashlight",
+        "state": [
+            "selected"
+        ],
+        "center": "[315,792]",
+        "resource-id": "tile_label",
+        "key": 3506402
+    },
+    {
+        "text": "Off",
+        "state": [
+            "selected"
+        ],
+        "center": "[315,847]",
+        "resource-id": "app_label",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[615,820]",
+        "key": 3506402
+    },
+    {
+        "text": "Wi-Fi",
+        "state": [
+            "selected"
+        ],
+        "center": "[825,792]",
+        "resource-id": "tile_label",
+        "key": 3506402
+    },
+    {
+        "text": "Off",
+        "state": [
+            "selected"
+        ],
+        "center": "[825,847]",
+        "resource-id": "app_label",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[105,1040]",
+        "key": 3506402
+    },
+    {
+        "text": "Mobile data",
+        "state": [
+            "selected"
+        ],
+        "center": "[315,1012]",
+        "resource-id": "tile_label",
+        "key": 3506402
+    },
+    {
+        "text": "LTE+",
+        "state": [
+            "selected"
+        ],
+        "center": "[315,1067]",
+        "resource-id": "app_label",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[615,1040]",
+        "resource-id": "icon",
+        "key": 3506402
+    },
+    {
+        "text": "Bluetooth",
+        "state": [
+            "selected"
+        ],
+        "center": "[825,1012]",
+        "resource-id": "tile_label",
+        "key": 3506402
+    },
+    {
+        "text": "On",
+        "state": [
+            "selected"
+        ],
+        "center": "[825,1067]",
+        "resource-id": "app_label",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[105,1260]",
+        "resource-id": "icon",
+        "key": 3506402
+    },
+    {
+        "text": "Do Not Disturb",
+        "state": [
+            "selected"
+        ],
+        "center": "[290,1232]",
+        "resource-id": "tile_label",
+        "key": 3506402
+    },
+    {
+        "text": "Off",
+        "state": [
+            "selected"
+        ],
+        "center": "[290,1287]",
+        "resource-id": "app_label",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[475,1260]",
+        "resource-id": "chevron",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[615,1260]",
+        "resource-id": "icon",
+        "key": 3506402
+    },
+    {
+        "text": "Auto-rotate",
+        "state": [
+            "selected"
+        ],
+        "center": "[825,1232]",
+        "resource-id": "tile_label",
+        "key": 3506402
+    },
+    {
+        "text": "On",
+        "state": [
+            "selected"
+        ],
+        "center": "[825,1287]",
+        "resource-id": "app_label",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Edit order of settings.",
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[975,1420]",
+        "resource-id": "edit",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Watermelon Wormhole by Lane 8 is playing from YouTube Music",
+        "interactions": [
+            "clickable",
+            "focusable",
+            "long-clickable"
+        ],
+        "center": "[540,1730]",
+        "resource-id": "qs_media_controls",
+        "key": 3506402
+    },
+    {
+        "text": "New app available",
+        "center": "[338,2019]",
+        "resource-id": "title",
+        "key": 3506402
+    },
+    {
+        "text": "?",
+        "center": "[522,2022]",
+        "resource-id": "time_divider",
+        "key": 3506402
+    },
+    {
+        "text": "1 hour ago",
+        "center": "[554,2022]",
+        "resource-id": "time",
+        "key": 3506402
+    },
+    {
+        "text": "Open",
+        "content-desc": "Open",
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[222,2185]",
+        "resource-id": "action0",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[615,820]",
+        "key": 3506402
+    },
+    {
+        "state": [
+            "selected"
+        ],
+        "center": "[105,1040]",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[110,1570]",
+        "resource-id": "icon",
+        "key": 3506402
+    },
+    {
+        "content-desc": "This phone",
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[892,1560]",
+        "resource-id": "media_seamless",
+        "key": 3506402
+    },
+    {
+        "text": "Watermelon Wormhole",
+        "center": "[320,1715]",
+        "resource-id": "header_title",
+        "key": 3506402
+    },
+    {
+        "text": "Lane 8",
+        "center": "[143,1772]",
+        "resource-id": "header_artist",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Resume",
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[940,1740]",
+        "resource-id": "actionPlayPause",
+        "key": 3506402
+    },
+    {
+        "interactions": [
+            "clickable",
+            "focusable"
+        ],
+        "center": "[540,1900]",
+        "resource-id": "media_progress_bar",
+        "key": 3506402
+    },
+    {
+        "text": "Kapi Cam - Y2K \u0026 CCD Camera was installed 9 days ago",
+        "center": "[413,2076]",
+        "resource-id": "text",
+        "key": 3506402
+    },
+    {
+        "content-desc": "Media device",
+        "center": "[872,1573]",
+        "resource-id": "media_seamless_button",
+        "key": 3506402
+    },
+    {
+        "text": "This phone",
+        "center": "[892,1573]",
+        "resource-id": "media_seamless_text",
+        "key": 3506402
+    }
+]
