@@ -1,9 +1,9 @@
-package com.greeffer.empty_activity.ui.main
+package com.greeffer.xcam.ui.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.greeffer.empty_activity.data.DataRepository
-import com.greeffer.empty_activity.ui.main.MainScreenUiState.Success
+import com.greeffer.xcam.data.DataRepository
+import com.greeffer.xcam.ui.main.MainScreenUiState.Success
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.catch

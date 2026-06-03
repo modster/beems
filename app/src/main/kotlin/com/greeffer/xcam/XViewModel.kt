@@ -1,4 +1,4 @@
-package com.greeffer.empty_activity
+package com.greeffer.xcam
 import androidx.camera.compose.CameraXViewfinder
 import androidx.camera.core.Preview
 import androidx.camera.core.SurfaceRequest

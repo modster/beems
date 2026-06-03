@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-  namespace = "com.greeffer.empty_activity"
+  namespace = "com.greeffer.xcam"
     compileSdk = 36
 
     defaultConfig {
-    applicationId = "com.greeffer.empty_activity"
+    applicationId = "com.greeffer.xcam"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

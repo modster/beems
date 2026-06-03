@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Kotlin Launch",
             "projectRoot": "${workspaceFolder}",
-            "mainClass": "${workspaceFolder}/app/src/main/kotlin/com/greeffer/empty_activity/MainActivity.kt"
+            "mainClass": "${workspaceFolder}/app/src/main/kotlin/com/greeffer/xcam/MainActivity.kt"
         }
     ]
 }

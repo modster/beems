@@ -1,4 +1,4 @@
-package com.greeffer.empty_activity.ui.main
+package com.greeffer.xcam.ui.main
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
@@ -9,8 +9,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation3.runtime.NavKey
-import com.greeffer.empty_activity.data.DefaultDataRepository
-import com.greeffer.empty_activity.theme.EmptyActivityTheme
+import com.greeffer.xcam.data.DefaultDataRepository
+import com.greeffer.xcam.theme.XCamTheme
 
 @Composable
 fun MainScreen(
@@ -53,11 +53,11 @@ fun Greeting(
 @Preview(showBackground = true)
 @Composable
 fun MainScreenPreview() {
-    EmptyActivityTheme { MainScreen(listOf("Android")) }
+    XCamTheme { MainScreen(listOf("Android")) }
 }
 
 @Preview(showBackground = true, widthDp = 340)
 @Composable
 fun MainScreenPortraitPreview() {
-    EmptyActivityTheme { MainScreen(listOf("Android")) }
+    XCamTheme { MainScreen(listOf("Android")) }
 }

@@ -1,6 +1,6 @@
-package com.greeffer.empty_activity.ui.main
+package com.greeffer.xcam.ui.main
 
-import com.example.empty_activity.data.DataRepository
+import com.examplepackage com.greeffer.xcam.data.DataRepository
 import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first

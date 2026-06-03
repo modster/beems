@@ -1,4 +1,4 @@
-package com.greeffer.empty_activity
+package com.greeffer.xcam.fx
 
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors

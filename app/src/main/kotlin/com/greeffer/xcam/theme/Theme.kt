@@ -1,4 +1,4 @@
-package com.greeffer.empty_activity.theme
+package com.greeffer.xcam.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -29,7 +29,7 @@ private val LightColorScheme =
     )
 
 @Composable
-fun EmptyActivityTheme(
+fun XCamTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,

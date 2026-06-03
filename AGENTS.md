@@ -14,9 +14,9 @@ Guidance for AI coding agents working in this repository.
 
 - Dependency and plugin versions: `gradle/libs.versions.toml`
 - App build config: `app/build.gradle.kts`
-- Entry point: `app/src/main/java/com/example/empty_activity/MainActivity.kt`
-- Navigation wiring: `app/src/main/java/com/example/empty_activity/Navigation.kt`
-- Camera integration: `app/src/main/java/com/example/empty_activity/CameraXViewfinder.kt`
+- Entry point: `app/src/main/java/com/example/xcam/MainActivity.kt`
+- Navigation wiring: `app/src/main/java/com/example/xcam/Navigation.kt`
+- Camera integration: `app/src/main/java/com/example/xcam/CameraXViewfinder.kt`
 
 ## Common Commands
 
@@ -40,9 +40,9 @@ Use from repository root.
 
 ## Coding Conventions Inferred From Current Code
 
-- Keep UI code in `app/src/main/java/com/example/empty_activity/ui/main`
-- Keep non-UI data logic in `app/src/main/java/com/example/empty_activity/data`
-- Keep effects/utilities in `app/src/main/java/com/example/empty_activity/fx`
+- Keep UI code in `app/src/main/java/com/example/xcam/ui/main`
+- Keep non-UI data logic in `app/src/main/java/com/example/xcam/data`
+- Keep effects/utilities in `app/src/main/java/com/example/xcam/fx`
 - Compose + ViewModel is the active pattern for screen state
 - Edge-to-edge is already enabled; preserve this behavior in activity/screen updates
 

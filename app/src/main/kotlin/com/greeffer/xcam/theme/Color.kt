@@ -1,4 +1,4 @@
-package com.greeffer.empty_activity.theme
+package com.greeffer.xcam.theme
 
 import androidx.compose.ui.graphics.Color
 
