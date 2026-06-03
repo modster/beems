@@ -1,4 +1,4 @@
-package com.example.empty_activity
+package com.greeffer.empty_activity
 
 import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable

@@ -1,4 +1,4 @@
-package com.example.empty_activity.theme
+package com.greeffer.empty_activity.theme
 
 import androidx.compose.ui.graphics.Color
 

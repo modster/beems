@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "kotlin",
+            "type": "node",
             "request": "launch",
             "name": "Kotlin Launch",
             "projectRoot": "${workspaceFolder}",
-            "mainClass": "path.to.your.MainClassKt"
+            "mainClass": "${workspaceFolder}/app/src/main/kotlin/com/greeffer/empty_activity/MainActivity.kt"
         }
     ]
 }

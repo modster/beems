@@ -1,0 +1,36 @@
+package com.greeffer.empty_activity
+
+import androidx.camera.compose.CameraXViewfinder
+import androidx.camera.core.Preview
+import androidx.camera.core.SurfaceRequest
+import androidx.camera.viewfinder.compose.MutableCoordinateTransformer
+import androidx.camera.viewfinder.core.ImplementationMode
+import androidx.compose.foundation.gestures.detectTapGestures
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
+import com.greeffer.empty_activity.XViewModel
+
+@Composable
+fun XViewfinder(
+    viewModel: XViewModel,
+    modifier: Modifier = Modifier,
+) {
+    val currentSurfaceRequest: SurfaceRequest? by viewModel.surfaceRequests.collectAsState()
+
+    currentSurfaceRequest?.let { surfaceRequest ->
+
+        // CoordinateTransformer for transforming from Offsets to Surface coordinates
+        val coordinateTransformer = remember { MutableCoordinateTransformer() }
+
+        CameraXViewfinder(
+            surfaceRequest = surfaceRequest,
+            implementationMode = ImplementationMode.EXTERNAL,
+            modifier = modifier.pointerInput(Unit) { detectTapGestures { } },
+            coordinateTransformer = coordinateTransformer,
+        )
+    }
+}

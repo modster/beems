@@ -1,4 +1,4 @@
-package com.example.empty_activity.data
+package com.greeffer.empty_activity.data
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

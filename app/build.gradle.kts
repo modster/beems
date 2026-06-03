@@ -1,17 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.compose.compiler)
-    //    alias(libs.plugins.kotlin.serialization)
+       alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
-    alias(libs.plugins.kotzilla)
+    // alias(libs.plugins.kotzilla) apply false
 }
 
 android {
-    namespace = "com.example.empty_activity"
+  namespace = "com.greeffer.empty_activity"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.empty_activity"
+    applicationId = "com.greeffer.empty_activity"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -100,7 +100,7 @@ dependencies {
     // androidTestImplementation(platform(libs.androidx.compose.bom))
     // debugImplementation(libs.androidx.compose.ui.test.manifest)
     // debugImplementation(libs.androidx.compose.ui.tooling)
-    // implementation(libs.accompanist.permissions)
+    implementation(libs.accompanist.permissions)
     // implementation(libs.androidx.activity.compose)
     // implementation(libs.androidx.camera.camera2)
     // implementation(libs.androidx.camera.compose)
@@ -143,9 +143,9 @@ dependencies {
     // implementation(libs.koin.core)
     // implementation(libs.koin.ktor)
     // implementation(libs.koin.test)
-    // implementation(libs.kotlinx.coroutines.android)
-    // implementation(libs.kotlinx.coroutines.core)
-    // implementation(libs.kotlinx.serialization.core)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.serialization.core)
     // implementation(libs.kotzilla.sdk.compose)
     // implementation(libs.material)
     // implementation(libs.media3.exoplayer)
@@ -159,7 +159,7 @@ dependencies {
     // testImplementation(libs.androidx.core)
     // testImplementation(libs.androidx.junit)
     // testImplementation(libs.junit)
-    // testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.kotlinx.coroutines.test)
     // //    implementation(libs.koin.androidx.startup)
 }
 
