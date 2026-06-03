@@ -1,3 +1,5 @@
+package com.example.empty_activity
+
 import androidx.camera.compose.CameraXViewfinder
 import androidx.camera.core.Preview
 import androidx.camera.core.SurfaceRequest
@@ -24,11 +26,15 @@ class PreviewViewModel : ViewModel() {
         }
     }
 
-    // fun focusOnPoint(surfaceBounds: Size, x: Float, y: Float) {
-    //     // Create point for CameraX's CameraControl.startFocusAndMetering() and submit...
-    // }
+    fun focusOnPoint(
+        surfaceBounds: Size,
+        x: Float,
+        y: Float,
+    ) {
+        // Create point for CameraX's CameraControl.startFocusAndMetering() and submit...
+    }
 
-    // // ...
+    // ...
 }
 
 @Composable
