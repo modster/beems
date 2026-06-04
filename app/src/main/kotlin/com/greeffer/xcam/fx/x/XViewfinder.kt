@@ -20,7 +20,7 @@ fun XViewfinder(
     val currentSurfaceRequest: SurfaceRequest? by vm.surfaceRequests.collectAsState()
 
     currentSurfaceRequest?.let { surfaceRequest ->
-        val currentSurfaceRequest: SurfaceRequest? by vm.surfaceRequests.collectAsState()
+//        val currentSurfaceRequest: SurfaceRequest? by vm.surfaceRequests.collectAsState()
 
         // CoordinateTransformer for transforming from Offsets to Surface coordinates
         val coordinateTransformer = remember { MutableCoordinateTransformer() }
