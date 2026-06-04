@@ -1,4 +1,4 @@
-package com.greeffer.xcam.fx
+package com.greeffer.xcam.fx.x
 
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors

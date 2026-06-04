@@ -1,15 +1,6 @@
-package com.greeffer.xcam.fx
-import androidx.camera.compose.CameraXViewfinder
+package com.greeffer.xcam.fx.x
 import androidx.camera.core.Preview
 import androidx.camera.core.SurfaceRequest
-import androidx.camera.viewfinder.compose.MutableCoordinateTransformer
-import androidx.camera.viewfinder.core.ImplementationMode
-import androidx.compose.foundation.gestures.detectTapGestures
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.remember
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -26,6 +17,10 @@ class XViewModel : ViewModel() {
         previewUseCase.setSurfaceProvider { newSurfaceRequest ->
             _surfaceRequests.value = newSurfaceRequest
         }
+    }
+
+    fun onTap(offsetToSurface: Any)
+    {
     }
 
     // fun focusOnPoint(surfaceBounds: Size, x: Float, y: Float) {

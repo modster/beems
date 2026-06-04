@@ -21,7 +21,7 @@ fun MainScreen(
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     when (state) {
         MainScreenUiState.Loading -> {
-            // Blank
+            Text("Loading...")
         }
 
         is MainScreenUiState.Success -> {

@@ -11,17 +11,21 @@ import androidx.navigation3.ui.NavDisplay
 import com.greeffer.xcam.ui.main.MainScreen
 
 @Composable
-fun MainNavigation() {
+fun MainNavigation()
+{
     val backStack = rememberNavBackStack(Main)
 
     NavDisplay(
-        backStack = backStack,
-        onBack = { backStack.removeLastOrNull() },
-        entryProvider =
-            entryProvider {
-                entry<Main> {
-                    MainScreen(onItemClick = { navKey -> backStack.add(navKey) }, modifier = Modifier.safeDrawingPadding().padding(16.dp))
-                }
-            },
+      backStack = backStack,
+      onBack = { backStack.removeLastOrNull() },
+      entryProvider =
+        entryProvider {
+            entry<Main> {
+                MainScreen(onItemClick = { navKey -> backStack.add(navKey) }, modifier = Modifier
+                  .safeDrawingPadding()
+                  .padding(16.dp)
+                )
+            }
+        },
     )
 }
