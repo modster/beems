@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../../.."
+		}
+	],
+	"settings": {
+		"android-ide-extension.gradleJavaHome": "C:\\Program Files\\Android\\Panda\\jbr",
+		"android-ide-extension.launchApplicationId": "com.greeffer.xcam",
+		"android-ide-extension.buildTask": "assembleDebug",
+		"android-ide-extension.defaultGradleModule": "app",
+		"android-ide-extension.gradleDaemonIdleStopMinutes": 10,
+		"android-ide-extension.gradleDaemonIdleStopLog": true,
+		"android-ide-extension.androidSdkPath": "C:\\Users\\User\\AppData\\Local\\Android\\Sdk",
+		"android-ide-extension.emulatorLaunchArgs": []
+	}
+}

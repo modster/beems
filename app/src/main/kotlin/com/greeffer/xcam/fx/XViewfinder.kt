@@ -1,4 +1,4 @@
-package com.greeffer.xcam
+package com.greeffer.xcam.fx
 
 import androidx.camera.compose.CameraXViewfinder
 import androidx.camera.core.Preview
@@ -12,7 +12,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
-import com.greeffer.xcam.XViewModel
+import com.greeffer.xcam.fx.XViewModel
 
 @Composable
 fun XViewfinder(

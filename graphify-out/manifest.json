@@ -1,0 +1,134 @@
+{
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\build.gradle.kts": {
+    "mtime": 1780484795.5448425,
+    "hash": "aa61a2cf3bd2abfbda864262c1d1f383"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\gradlew": {
+    "mtime": 1780431565.6376557,
+    "hash": "857faf4b42fc9e324fb40b7223f2a94a"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\settings.gradle.kts": {
+    "mtime": 1780452781.6644404,
+    "hash": "ae4e0a0adf459129eca193593e78c944"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\build.gradle.kts": {
+    "mtime": 1780485295.9847767,
+    "hash": "17004812c0d3691e77a5e4ca8f4ede47"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\androidTest\\java\\com\\example\\empty_activity\\ui\\main\\MainScreenTest.kt": {
+    "mtime": 1780485359.9811985,
+    "hash": "9c08946f2a3ad440010efb9a6515eb34"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\MainActivity.kt": {
+    "mtime": 1780485656.2172945,
+    "hash": "820e81e3c33f35b1bbfd5b61cb4f47ac"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\Navigation.kt": {
+    "mtime": 1780485680.8633587,
+    "hash": "3bebc2fca27324b9642aa603bff1eab8"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\NavigationKeys.kt": {
+    "mtime": 1780486375.8615725,
+    "hash": "6c166d6c72bcaf1e55ca6c346b106404"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\data\\DataRepository.kt": {
+    "mtime": 1780485359.9954448,
+    "hash": "8c2089db23af57e45b57c7d44dfaa30c"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\XEffect.kt": {
+    "mtime": 1780486317.5798795,
+    "hash": "49bb5ca62d1827c9903c2bb88db34c38"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\XScreen.kt": {
+    "mtime": 1780528915.9626243,
+    "hash": "c1ea74bf0815391209cdbe8612055c36"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\XViewfinder.kt": {
+    "mtime": 1780485712.8847785,
+    "hash": "199e38f4ed2aa26695623f339fa20729"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\XViewModel.kt": {
+    "mtime": 1780485359.5588458,
+    "hash": "d059b1831b6629107575a72bf60960e6"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\theme\\Color.kt": {
+    "mtime": 1780485359.7450497,
+    "hash": "b59b603240fd075815c2f88d24848236"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\theme\\Theme.kt": {
+    "mtime": 1780485622.2665205,
+    "hash": "a0028dbf481f45b49c38426f5e558eed"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\theme\\Type.kt": {
+    "mtime": 1780485359.8294013,
+    "hash": "189ddef9fc53f7978cf3aadba6de1a8a"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\ui\\main\\MainScreen.kt": {
+    "mtime": 1780487695.9605656,
+    "hash": "c0ea53bb3834bce45198dfdcadedcc40"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\ui\\main\\MainScreenViewModel.kt": {
+    "mtime": 1780485658.8947873,
+    "hash": "1b165ef6df81a3df22b282b73ba7196e"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\test\\java\\com\\example\\empty_activity\\ui\\main\\MainScreenViewModelTest.kt": {
+    "mtime": 1780485358.9661505,
+    "hash": "b74eb0194bd2f0bee4c2d81266703cad"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\AGENTS.md": {
+    "mtime": 1780523661.8082783,
+    "hash": "6facadda3f6f8c589c05b297b753159d"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\raw\\developer_android_com_reference_kotlin_androidx_media3_common_Effect.md": {
+    "mtime": 1780528274.835569,
+    "hash": "c76514cbe471bc322431f0755041e2bf"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\raw\\developer_android_com_reference_kotlin_androidx_media3_common_Effect_1.md": {
+    "mtime": 1780528345.691314,
+    "hash": "2e728893fd372fc5ff3914e5f7de10e8"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\raw\\developer_android_com_reference_kotlin_androidx_media3_common_Effect_2.md": {
+    "mtime": 1780528358.0492551,
+    "hash": "89fb3d8419a30e2b302f3f9837901751"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp": {
+    "mtime": 1780431565.6624901,
+    "hash": "39d9bb21eb48f128a71c3f01ad3cd427"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp": {
+    "mtime": 1780431565.6634881,
+    "hash": "70d6f58af3c76ee221c829b1ce9daa04"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp": {
+    "mtime": 1780431565.6653337,
+    "hash": "d2acce71c7b46e5e9540d23a9f7b2166"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp": {
+    "mtime": 1780431565.6664176,
+    "hash": "6376acb48f96a855ee95c113cd7fd616"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp": {
+    "mtime": 1780431565.6674244,
+    "hash": "bd087d80b70bec05a43c745f29dc3ffc"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp": {
+    "mtime": 1780431565.6684232,
+    "hash": "7479edd56ab712609f030054bffd7263"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp": {
+    "mtime": 1780431565.6694233,
+    "hash": "ea180e8d1a2e8300cc998b987266b736"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp": {
+    "mtime": 1780431565.6704257,
+    "hash": "947842742b29eeda80ee0805e1600366"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp": {
+    "mtime": 1780431565.6714256,
+    "hash": "54ab624970c86c2146e76b93f27586f7"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp": {
+    "mtime": 1780431565.6717699,
+    "hash": "9ee591be72fb336861a8044086054daa"
+  }
+}

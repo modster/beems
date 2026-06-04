@@ -53,11 +53,11 @@ fun Greeting(
 @Preview(showBackground = true)
 @Composable
 fun MainScreenPreview() {
-    XCamTheme { MainScreen(listOf("Android")) }
+    XCamTheme { MainScreen(listOf("Android", "CameraXViewfinder", "CameraEffect")) }
 }
 
 @Preview(showBackground = true, widthDp = 340)
 @Composable
 fun MainScreenPortraitPreview() {
-    XCamTheme { MainScreen(listOf("Android")) }
+    XCamTheme { MainScreen(listOf("Android", "CameraXViewfinder", "CameraEffect")) }
 }

@@ -1,4 +1,4 @@
-package com.greeffer.xcam
+package com.greeffer.xcam.fx
 import androidx.camera.compose.CameraXViewfinder
 import androidx.camera.core.Preview
 import androidx.camera.core.SurfaceRequest
