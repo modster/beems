@@ -60,682 +60,682 @@
       "file_type": "code",
       "source_file": "build.gradle.kts",
       "source_location": "L1",
-      "id": "build_gradle_kts",
-      "community": 19,
-      "norm_label": "build.gradle.kts"
+      "community": 22,
+      "norm_label": "build.gradle.kts",
+      "id": "build_gradle_kts"
     },
     {
       "label": "settings.gradle.kts",
       "file_type": "code",
       "source_file": "settings.gradle.kts",
       "source_location": "L1",
-      "id": "settings_gradle_kts",
-      "community": 20,
-      "norm_label": "settings.gradle.kts"
+      "community": 23,
+      "norm_label": "settings.gradle.kts",
+      "id": "settings_gradle_kts"
     },
     {
       "label": "build.gradle.kts",
       "file_type": "code",
       "source_file": "app/build.gradle.kts",
       "source_location": "L1",
-      "id": "app_build_gradle_kts",
-      "community": 21,
-      "norm_label": "build.gradle.kts"
+      "community": 24,
+      "norm_label": "build.gradle.kts",
+      "id": "app_build_gradle_kts"
     },
     {
       "label": "MainScreenTest.kt",
       "file_type": "code",
       "source_file": "app/src/androidTest/java/com/example/empty_activity/ui/main/MainScreenTest.kt",
       "source_location": "L1",
-      "id": "app_src_androidtest_java_com_example_empty_activity_ui_main_mainscreentest_kt",
-      "community": 12,
-      "norm_label": "mainscreentest.kt"
+      "community": 14,
+      "norm_label": "mainscreentest.kt",
+      "id": "app_src_androidtest_java_com_example_empty_activity_ui_main_mainscreentest_kt"
     },
     {
       "label": "MainScreenTest",
       "file_type": "code",
       "source_file": "app/src/androidTest/java/com/example/empty_activity/ui/main/MainScreenTest.kt",
       "source_location": "L11",
-      "id": "main_mainscreentest_mainscreentest",
-      "community": 12,
-      "norm_label": "mainscreentest"
+      "community": 14,
+      "norm_label": "mainscreentest",
+      "id": "main_mainscreentest_mainscreentest"
     },
     {
       "label": ".setup()",
       "file_type": "code",
       "source_file": "app/src/androidTest/java/com/example/empty_activity/ui/main/MainScreenTest.kt",
       "source_location": "L14",
-      "id": "main_mainscreentest_mainscreentest_setup",
-      "community": 12,
-      "norm_label": ".setup()"
+      "community": 14,
+      "norm_label": ".setup()",
+      "id": "main_mainscreentest_mainscreentest_setup"
     },
     {
       "label": ".firstItem_exists()",
       "file_type": "code",
       "source_file": "app/src/androidTest/java/com/example/empty_activity/ui/main/MainScreenTest.kt",
       "source_location": "L19",
-      "id": "main_mainscreentest_mainscreentest_firstitem_exists",
-      "community": 12,
-      "norm_label": ".firstitem_exists()"
+      "community": 14,
+      "norm_label": ".firstitem_exists()",
+      "id": "main_mainscreentest_mainscreentest_firstitem_exists"
     },
     {
       "label": "MainActivity.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/MainActivity.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_mainactivity_kt",
       "community": 0,
-      "norm_label": "mainactivity.kt"
+      "norm_label": "mainactivity.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_mainactivity_kt"
     },
     {
       "label": "MainActivity",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/MainActivity.kt",
       "source_location": "L13",
-      "id": "xcam_mainactivity_mainactivity",
       "community": 0,
-      "norm_label": "mainactivity"
+      "norm_label": "mainactivity",
+      "id": "xcam_mainactivity_mainactivity"
     },
     {
       "label": ".onCreate()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/MainActivity.kt",
       "source_location": "L14",
-      "id": "xcam_mainactivity_mainactivity_oncreate",
       "community": 0,
-      "norm_label": ".oncreate()"
+      "norm_label": ".oncreate()",
+      "id": "xcam_mainactivity_mainactivity_oncreate"
     },
     {
       "label": "Navigation.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/Navigation.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_navigation_kt",
       "community": 0,
-      "norm_label": "navigation.kt"
+      "norm_label": "navigation.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_navigation_kt"
     },
     {
       "label": "MainNavigation()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/Navigation.kt",
       "source_location": "L14",
-      "id": "xcam_navigation_mainnavigation",
       "community": 0,
-      "norm_label": "mainnavigation()"
+      "norm_label": "mainnavigation()",
+      "id": "xcam_navigation_mainnavigation"
     },
     {
       "label": "NavigationKeys.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/NavigationKeys.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_navigationkeys_kt",
-      "community": 13,
-      "norm_label": "navigationkeys.kt"
+      "community": 16,
+      "norm_label": "navigationkeys.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_navigationkeys_kt"
     },
     {
       "label": "Main",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/NavigationKeys.kt",
       "source_location": "L6",
-      "id": "xcam_navigationkeys_main",
-      "community": 13,
-      "norm_label": "main"
+      "community": 16,
+      "norm_label": "main",
+      "id": "xcam_navigationkeys_main"
     },
     {
       "label": "XCam",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/NavigationKeys.kt",
       "source_location": "L8",
-      "id": "xcam_navigationkeys_xcam",
-      "community": 13,
-      "norm_label": "xcam"
+      "community": 16,
+      "norm_label": "xcam",
+      "id": "xcam_navigationkeys_xcam"
     },
     {
       "label": "DataRepository.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/data/DataRepository.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_data_datarepository_kt",
-      "community": 11,
-      "norm_label": "datarepository.kt"
+      "community": 15,
+      "norm_label": "datarepository.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_data_datarepository_kt"
     },
     {
       "label": "DataRepository",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/data/DataRepository.kt",
       "source_location": "L11",
-      "id": "data_datarepository_datarepository",
-      "community": 11,
-      "norm_label": "datarepository"
+      "community": 15,
+      "norm_label": "datarepository",
+      "id": "data_datarepository_datarepository"
     },
     {
       "label": "XCameraFilter",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/data/DataRepository.kt",
       "source_location": "L14",
-      "id": "data_datarepository_xcamerafilter",
-      "community": 11,
-      "norm_label": "xcamerafilter"
+      "community": 15,
+      "norm_label": "xcamerafilter",
+      "id": "data_datarepository_xcamerafilter"
     },
     {
       "label": "DefaultDataRepository",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/data/DataRepository.kt",
       "source_location": "L34",
-      "id": "data_datarepository_defaultdatarepository",
-      "community": 11,
-      "norm_label": "defaultdatarepository"
+      "community": 15,
+      "norm_label": "defaultdatarepository",
+      "id": "data_datarepository_defaultdatarepository"
     },
     {
       "label": "CameraWithMedia3EffectScreen.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/CameraWithMedia3EffectScreen.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_camerawithmedia3effectscreen_kt",
-      "community": 14,
-      "norm_label": "camerawithmedia3effectscreen.kt"
+      "community": 17,
+      "norm_label": "camerawithmedia3effectscreen.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_camerawithmedia3effectscreen_kt"
     },
     {
       "label": "CameraWithMedia3EffectScreen()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/CameraWithMedia3EffectScreen.kt",
       "source_location": "L44",
-      "id": "x_camerawithmedia3effectscreen_camerawithmedia3effectscreen",
-      "community": 14,
-      "norm_label": "camerawithmedia3effectscreen()"
+      "community": 17,
+      "norm_label": "camerawithmedia3effectscreen()",
+      "id": "x_camerawithmedia3effectscreen_camerawithmedia3effectscreen"
     },
     {
       "label": "capturePhoto()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/CameraWithMedia3EffectScreen.kt",
       "source_location": "L171",
-      "id": "x_camerawithmedia3effectscreen_capturephoto",
-      "community": 14,
-      "norm_label": "capturephoto()"
+      "community": 17,
+      "norm_label": "capturephoto()",
+      "id": "x_camerawithmedia3effectscreen_capturephoto"
     },
     {
       "label": "ClassicSepiaEffect.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_classicsepiaeffect_kt",
-      "community": 7,
-      "norm_label": "classicsepiaeffect.kt"
+      "community": 6,
+      "norm_label": "classicsepiaeffect.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_classicsepiaeffect_kt"
     },
     {
       "label": "ClassicSepiaEffect",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L13",
-      "id": "x_classicsepiaeffect_classicsepiaeffect",
-      "community": 7,
-      "norm_label": "classicsepiaeffect"
+      "community": 6,
+      "norm_label": "classicsepiaeffect",
+      "id": "x_classicsepiaeffect_classicsepiaeffect"
     },
     {
       "label": ".toGlShaderProgram()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L16",
-      "id": "x_classicsepiaeffect_classicsepiaeffect_toglshaderprogram",
-      "community": 7,
-      "norm_label": ".toglshaderprogram()"
+      "community": 6,
+      "norm_label": ".toglshaderprogram()",
+      "id": "x_classicsepiaeffect_classicsepiaeffect_toglshaderprogram"
     },
     {
       "label": "ClassicSepiaShaderProgram",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L22",
-      "id": "x_classicsepiaeffect_classicsepiashaderprogram",
-      "community": 7,
-      "norm_label": "classicsepiashaderprogram"
+      "community": 6,
+      "norm_label": "classicsepiashaderprogram",
+      "id": "x_classicsepiaeffect_classicsepiashaderprogram"
     },
     {
       "label": ".configure()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L34",
-      "id": "x_classicsepiaeffect_classicsepiashaderprogram_configure",
-      "community": 7,
-      "norm_label": ".configure()"
+      "community": 6,
+      "norm_label": ".configure()",
+      "id": "x_classicsepiaeffect_classicsepiashaderprogram_configure"
     },
     {
       "label": ".drawFrame()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L54",
-      "id": "x_classicsepiaeffect_classicsepiashaderprogram_drawframe",
-      "community": 7,
-      "norm_label": ".drawframe()"
+      "community": 6,
+      "norm_label": ".drawframe()",
+      "id": "x_classicsepiaeffect_classicsepiashaderprogram_drawframe"
     },
     {
       "label": ".release()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L62",
-      "id": "x_classicsepiaeffect_classicsepiashaderprogram_release",
-      "community": 7,
-      "norm_label": ".release()"
+      "community": 6,
+      "norm_label": ".release()",
+      "id": "x_classicsepiaeffect_classicsepiashaderprogram_release"
     },
     {
       "label": "FilterSelectorCameraScreen.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/FilterSelectorCameraScreen.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_filterselectorcamerascreen_kt",
-      "community": 0,
-      "norm_label": "filterselectorcamerascreen.kt"
+      "community": 11,
+      "norm_label": "filterselectorcamerascreen.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_filterselectorcamerascreen_kt"
     },
     {
       "label": "FilterSelectorCameraScreen()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/FilterSelectorCameraScreen.kt",
       "source_location": "L67",
-      "id": "x_filterselectorcamerascreen_filterselectorcamerascreen",
-      "community": 0,
-      "norm_label": "filterselectorcamerascreen()"
+      "community": 11,
+      "norm_label": "filterselectorcamerascreen()",
+      "id": "x_filterselectorcamerascreen_filterselectorcamerascreen"
     },
     {
       "label": "takePicture()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/FilterSelectorCameraScreen.kt",
       "source_location": "L243",
-      "id": "x_filterselectorcamerascreen_takepicture",
-      "community": 0,
-      "norm_label": "takepicture()"
+      "community": 11,
+      "norm_label": "takepicture()",
+      "id": "x_filterselectorcamerascreen_takepicture"
     },
     {
       "label": "sepiaSamples.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/sepiaSamples.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_sepiasamples_kt",
-      "community": 15,
-      "norm_label": "sepiasamples.kt"
+      "community": 18,
+      "norm_label": "sepiasamples.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_sepiasamples_kt"
     },
     {
       "label": "applySepiaFilter()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/sepiaSamples.kt",
       "source_location": "L20",
-      "id": "x_sepiasamples_applysepiafilter",
-      "community": 15,
-      "norm_label": "applysepiafilter()"
+      "community": 18,
+      "norm_label": "applysepiafilter()",
+      "id": "x_sepiasamples_applysepiafilter"
     },
     {
       "label": "setCustomColorFilter()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/sepiaSamples.kt",
       "source_location": "L71",
-      "id": "x_sepiasamples_setcustomcolorfilter",
-      "community": 15,
-      "norm_label": "setcustomcolorfilter()"
+      "community": 18,
+      "norm_label": "setcustomcolorfilter()",
+      "id": "x_sepiasamples_setcustomcolorfilter"
     },
     {
       "label": "VignetterShaderProgram.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_vignettershaderprogram_kt",
-      "community": 8,
-      "norm_label": "vignettershaderprogram.kt"
+      "community": 7,
+      "norm_label": "vignettershaderprogram.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_vignettershaderprogram_kt"
     },
     {
       "label": "VignetterEffect",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L14",
-      "id": "x_vignettershaderprogram_vignettereffect",
-      "community": 8,
-      "norm_label": "vignettereffect"
+      "community": 7,
+      "norm_label": "vignettereffect",
+      "id": "x_vignettershaderprogram_vignettereffect"
     },
     {
       "label": ".toGlShaderProgram()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L16",
-      "id": "x_vignettershaderprogram_vignettereffect_toglshaderprogram",
-      "community": 8,
-      "norm_label": ".toglshaderprogram()"
+      "community": 7,
+      "norm_label": ".toglshaderprogram()",
+      "id": "x_vignettershaderprogram_vignettereffect_toglshaderprogram"
     },
     {
       "label": "VignetterShaderProgram",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L21",
-      "id": "x_vignettershaderprogram_vignettershaderprogram",
-      "community": 8,
-      "norm_label": "vignettershaderprogram"
+      "community": 7,
+      "norm_label": "vignettershaderprogram",
+      "id": "x_vignettershaderprogram_vignettershaderprogram"
     },
     {
       "label": ".configure()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L28",
-      "id": "x_vignettershaderprogram_vignettershaderprogram_configure",
-      "community": 8,
-      "norm_label": ".configure()"
+      "community": 7,
+      "norm_label": ".configure()",
+      "id": "x_vignettershaderprogram_vignettershaderprogram_configure"
     },
     {
       "label": ".drawFrame()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L48",
-      "id": "x_vignettershaderprogram_vignettershaderprogram_drawframe",
-      "community": 8,
-      "norm_label": ".drawframe()"
+      "community": 7,
+      "norm_label": ".drawframe()",
+      "id": "x_vignettershaderprogram_vignettershaderprogram_drawframe"
     },
     {
       "label": ".release()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L56",
-      "id": "x_vignettershaderprogram_vignettershaderprogram_release",
-      "community": 8,
-      "norm_label": ".release()"
+      "community": 7,
+      "norm_label": ".release()",
+      "id": "x_vignettershaderprogram_vignettershaderprogram_release"
     },
     {
       "label": "XCamScreen.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamscreen_kt",
       "community": 0,
-      "norm_label": "xcamscreen.kt"
+      "norm_label": "xcamscreen.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamscreen_kt"
     },
     {
       "label": "XCamScreen()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
       "source_location": "L23",
-      "id": "x_xcamscreen_xcamscreen",
       "community": 0,
-      "norm_label": "xcamscreen()"
+      "norm_label": "xcamscreen()",
+      "id": "x_xcamscreen_xcamscreen"
     },
     {
       "label": "XCam()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
       "source_location": "L46",
-      "id": "x_xcamscreen_xcam",
       "community": 0,
-      "norm_label": "xcam()"
+      "norm_label": "xcam()",
+      "id": "x_xcamscreen_xcam"
     },
     {
       "label": "XCamViewModel.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamviewmodel_kt",
-      "community": 6,
-      "norm_label": "xcamviewmodel.kt"
+      "community": 8,
+      "norm_label": "xcamviewmodel.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamviewmodel_kt"
     },
     {
       "label": "XCamViewModel",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L15",
-      "id": "x_xcamviewmodel_xcamviewmodel",
-      "community": 6,
-      "norm_label": "xcamviewmodel"
+      "community": 8,
+      "norm_label": "xcamviewmodel",
+      "id": "x_xcamviewmodel_xcamviewmodel"
     },
     {
       "label": ".produceSurfaceRequests()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L29",
-      "id": "x_xcamviewmodel_xcamviewmodel_producesurfacerequests",
-      "community": 6,
-      "norm_label": ".producesurfacerequests()"
+      "community": 8,
+      "norm_label": ".producesurfacerequests()",
+      "id": "x_xcamviewmodel_xcamviewmodel_producesurfacerequests"
     },
     {
       "label": ".onTap()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L36",
-      "id": "x_xcamviewmodel_xcamviewmodel_ontap",
-      "community": 6,
-      "norm_label": ".ontap()"
+      "community": 8,
+      "norm_label": ".ontap()",
+      "id": "x_xcamviewmodel_xcamviewmodel_ontap"
     },
     {
       "label": "XCamUiState",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L47",
-      "id": "x_xcamviewmodel_xcamuistate",
-      "community": 6,
-      "norm_label": "xcamuistate"
+      "community": 8,
+      "norm_label": "xcamuistate",
+      "id": "x_xcamviewmodel_xcamuistate"
     },
     {
       "label": "Loading",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L48",
-      "id": "x_xcamviewmodel_loading",
-      "community": 6,
-      "norm_label": "loading"
+      "community": 8,
+      "norm_label": "loading",
+      "id": "x_xcamviewmodel_loading"
     },
     {
       "label": "Error",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L50",
-      "id": "x_xcamviewmodel_error",
-      "community": 6,
-      "norm_label": "error"
+      "community": 8,
+      "norm_label": "error",
+      "id": "x_xcamviewmodel_error"
     },
     {
       "label": "Success",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L54",
-      "id": "x_xcamviewmodel_success",
-      "community": 6,
-      "norm_label": "success"
+      "community": 8,
+      "norm_label": "success",
+      "id": "x_xcamviewmodel_success"
     },
     {
       "label": "XViewfinder.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XViewfinder.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xviewfinder_kt",
-      "community": 18,
-      "norm_label": "xviewfinder.kt"
+      "community": 21,
+      "norm_label": "xviewfinder.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xviewfinder_kt"
     },
     {
       "label": "XViewfinder()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XViewfinder.kt",
       "source_location": "L15",
-      "id": "x_xviewfinder_xviewfinder",
-      "community": 18,
-      "norm_label": "xviewfinder()"
+      "community": 21,
+      "norm_label": "xviewfinder()",
+      "id": "x_xviewfinder_xviewfinder"
     },
     {
       "label": "Color.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/theme/Color.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_theme_color_kt",
-      "community": 22,
-      "norm_label": "color.kt"
+      "community": 25,
+      "norm_label": "color.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_theme_color_kt"
     },
     {
       "label": "Theme.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/theme/Theme.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_theme_theme_kt",
       "community": 0,
-      "norm_label": "theme.kt"
+      "norm_label": "theme.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_theme_theme_kt"
     },
     {
       "label": "XCamTheme()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/theme/Theme.kt",
       "source_location": "L31",
-      "id": "theme_theme_xcamtheme",
       "community": 0,
-      "norm_label": "xcamtheme()"
+      "norm_label": "xcamtheme()",
+      "id": "theme_theme_xcamtheme"
     },
     {
       "label": "Type.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/theme/Type.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_theme_type_kt",
-      "community": 23,
-      "norm_label": "type.kt"
+      "community": 26,
+      "norm_label": "type.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_theme_type_kt"
     },
     {
       "label": "MainScreen.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_ui_main_mainscreen_kt",
       "community": 0,
-      "norm_label": "mainscreen.kt"
+      "norm_label": "mainscreen.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_ui_main_mainscreen_kt"
     },
     {
       "label": "MainScreen()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
       "source_location": "L16",
-      "id": "main_mainscreen_mainscreen",
       "community": 0,
-      "norm_label": "mainscreen()"
+      "norm_label": "mainscreen()",
+      "id": "main_mainscreen_mainscreen"
     },
     {
       "label": "Greeting()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
       "source_location": "L48",
-      "id": "main_mainscreen_greeting",
       "community": 0,
-      "norm_label": "greeting()"
+      "norm_label": "greeting()",
+      "id": "main_mainscreen_greeting"
     },
     {
       "label": "MainScreenPreview()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
       "source_location": "L56",
-      "id": "main_mainscreen_mainscreenpreview",
       "community": 0,
-      "norm_label": "mainscreenpreview()"
+      "norm_label": "mainscreenpreview()",
+      "id": "main_mainscreen_mainscreenpreview"
     },
     {
       "label": "MainScreenPortraitPreview()",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
       "source_location": "L62",
-      "id": "main_mainscreen_mainscreenportraitpreview",
       "community": 0,
-      "norm_label": "mainscreenportraitpreview()"
+      "norm_label": "mainscreenportraitpreview()",
+      "id": "main_mainscreen_mainscreenportraitpreview"
     },
     {
       "label": "MainScreenViewModel.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreenViewModel.kt",
       "source_location": "L1",
-      "id": "app_src_main_kotlin_com_greeffer_xcam_ui_main_mainscreenviewmodel_kt",
-      "community": 3,
-      "norm_label": "mainscreenviewmodel.kt"
+      "community": 2,
+      "norm_label": "mainscreenviewmodel.kt",
+      "id": "app_src_main_kotlin_com_greeffer_xcam_ui_main_mainscreenviewmodel_kt"
     },
     {
       "label": "MainScreenViewModel",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreenViewModel.kt",
       "source_location": "L13",
-      "id": "main_mainscreenviewmodel_mainscreenviewmodel",
-      "community": 3,
-      "norm_label": "mainscreenviewmodel"
+      "community": 2,
+      "norm_label": "mainscreenviewmodel",
+      "id": "main_mainscreenviewmodel_mainscreenviewmodel"
     },
     {
       "label": "MainScreenUiState",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreenViewModel.kt",
       "source_location": "L23",
-      "id": "main_mainscreenviewmodel_mainscreenuistate",
-      "community": 3,
-      "norm_label": "mainscreenuistate"
+      "community": 2,
+      "norm_label": "mainscreenuistate",
+      "id": "main_mainscreenviewmodel_mainscreenuistate"
     },
     {
       "label": "Loading",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreenViewModel.kt",
       "source_location": "L24",
-      "id": "main_mainscreenviewmodel_loading",
-      "community": 3,
-      "norm_label": "loading"
+      "community": 2,
+      "norm_label": "loading",
+      "id": "main_mainscreenviewmodel_loading"
     },
     {
       "label": "Error",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreenViewModel.kt",
       "source_location": "L26",
-      "id": "main_mainscreenviewmodel_error",
-      "community": 3,
-      "norm_label": "error"
+      "community": 2,
+      "norm_label": "error",
+      "id": "main_mainscreenviewmodel_error"
     },
     {
       "label": "Success",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreenViewModel.kt",
       "source_location": "L30",
-      "id": "main_mainscreenviewmodel_success",
-      "community": 3,
-      "norm_label": "success"
+      "community": 2,
+      "norm_label": "success",
+      "id": "main_mainscreenviewmodel_success"
     },
     {
       "label": "MainScreenViewModelTest.kt",
       "file_type": "code",
       "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
       "source_location": "L1",
-      "id": "app_src_test_java_com_example_empty_activity_ui_main_mainscreenviewmodeltest_kt",
-      "community": 3,
-      "norm_label": "mainscreenviewmodeltest.kt"
+      "community": 2,
+      "norm_label": "mainscreenviewmodeltest.kt",
+      "id": "app_src_test_java_com_example_empty_activity_ui_main_mainscreenviewmodeltest_kt"
     },
     {
       "label": "MainScreenViewModelTest",
       "file_type": "code",
       "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
       "source_location": "L11",
-      "id": "main_mainscreenviewmodeltest_mainscreenviewmodeltest",
-      "community": 3,
-      "norm_label": "mainscreenviewmodeltest"
+      "community": 2,
+      "norm_label": "mainscreenviewmodeltest",
+      "id": "main_mainscreenviewmodeltest_mainscreenviewmodeltest"
     },
     {
       "label": ".uiState_initiallyLoading()",
       "file_type": "code",
       "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
       "source_location": "L12",
-      "id": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_initiallyloading",
-      "community": 3,
-      "norm_label": ".uistate_initiallyloading()"
+      "community": 2,
+      "norm_label": ".uistate_initiallyloading()",
+      "id": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_initiallyloading"
     },
     {
       "label": ".uiState_onItemSaved_isDisplayed()",
       "file_type": "code",
       "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
       "source_location": "L19",
-      "id": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_onitemsaved_isdisplayed",
-      "community": 3,
-      "norm_label": ".uistate_onitemsaved_isdisplayed()"
+      "community": 2,
+      "norm_label": ".uistate_onitemsaved_isdisplayed()",
+      "id": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_onitemsaved_isdisplayed"
     },
     {
       "label": "FakeMyModelRepository",
       "file_type": "code",
       "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
       "source_location": "L27",
-      "id": "main_mainscreenviewmodeltest_fakemymodelrepository",
-      "community": 3,
-      "norm_label": "fakemymodelrepository"
+      "community": 2,
+      "norm_label": "fakemymodelrepository",
+      "id": "main_mainscreenviewmodeltest_fakemymodelrepository"
     },
     {
       "label": "XEffect.kt",
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/XEffect.kt",
       "source_location": "L1",
-      "community": 16,
+      "community": 19,
       "norm_label": "xeffect.kt",
       "id": "app_src_main_kotlin_com_greeffer_xcam_fx_xeffect_kt"
     },
@@ -744,7 +744,7 @@
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/XEffect.kt",
       "source_location": "L6",
-      "community": 16,
+      "community": 19,
       "norm_label": "xeffect",
       "id": "fx_xeffect_xeffect"
     },
@@ -753,7 +753,7 @@
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/XEffect.kt",
       "source_location": "L8",
-      "community": 16,
+      "community": 19,
       "norm_label": "getexecutor()",
       "id": "fx_xeffect_getexecutor"
     },
@@ -762,7 +762,7 @@
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/XScreen.kt",
       "source_location": "L1",
-      "community": 10,
+      "community": 12,
       "norm_label": "xscreen.kt",
       "id": "app_src_main_kotlin_com_greeffer_xcam_fx_xscreen_kt"
     },
@@ -771,7 +771,7 @@
       "file_type": "code",
       "source_file": "XScreen.kt",
       "source_location": "L18",
-      "community": 10,
+      "community": 12,
       "norm_label": "xscreen()",
       "id": "fx_xscreen_xscreen"
     },
@@ -780,7 +780,7 @@
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/XScreen.kt",
       "source_location": "L71",
-      "community": 10,
+      "community": 12,
       "norm_label": "xcamscreen()",
       "id": "fx_xscreen_xcamscreen"
     },
@@ -789,7 +789,7 @@
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/XViewfinder.kt",
       "source_location": "L1",
-      "community": 10,
+      "community": 12,
       "norm_label": "xviewfinder.kt",
       "id": "app_src_main_kotlin_com_greeffer_xcam_fx_xviewfinder_kt"
     },
@@ -798,7 +798,7 @@
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/XViewfinder.kt",
       "source_location": "L17",
-      "community": 10,
+      "community": 12,
       "norm_label": "xviewfinder()",
       "id": "fx_xviewfinder_xviewfinder"
     },
@@ -807,7 +807,7 @@
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/XViewModel.kt",
       "source_location": "L1",
-      "community": 17,
+      "community": 20,
       "norm_label": "xviewmodel.kt",
       "id": "app_src_main_kotlin_com_greeffer_xcam_fx_xviewmodel_kt"
     },
@@ -816,7 +816,7 @@
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/XViewModel.kt",
       "source_location": "L18",
-      "community": 17,
+      "community": 20,
       "norm_label": "xviewmodel",
       "id": "fx_xviewmodel_xviewmodel"
     },
@@ -825,7 +825,7 @@
       "file_type": "code",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/XViewModel.kt",
       "source_location": "L24",
-      "community": 17,
+      "community": 20,
       "norm_label": ".producesurfacerequests()",
       "id": "fx_xviewmodel_xviewmodel_producesurfacerequests"
     },
@@ -851,7 +851,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 27,
       "norm_label": "root gradle build script",
       "id": "rootbuild_RootBuildScript"
     },
@@ -1059,7 +1059,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "custom material 3 typography",
       "id": "type_customtypography"
     },
@@ -1085,7 +1085,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "mainscreen internal composable (data renderer)",
       "id": "mainscreen_internalcomposable"
     },
@@ -1098,7 +1098,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "greeting composable",
       "id": "greeting_composable"
     },
@@ -1111,7 +1111,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "mainscreenpreview composable",
       "id": "mainscreen_preview"
     },
@@ -1124,7 +1124,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "mainscreenportraitpreview composable",
       "id": "mainscreen_portraitpreview"
     },
@@ -1215,7 +1215,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "mainscreentest (compose ui instrumentation)",
       "id": "composetest_mainscreen"
     },
@@ -1228,7 +1228,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "xcamtheme composable wrapper",
       "id": "xcamtheme"
     },
@@ -1289,7 +1289,7 @@
       "file_type": "code",
       "source_file": "XScreen.kt",
       "source_location": "L1",
-      "community": 10,
+      "community": 12,
       "norm_label": "xscreen.kt",
       "id": "xscreen_kt"
     },
@@ -1302,7 +1302,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "agents.md a\u20ac\u201d project guidance",
       "id": "agents_md"
     },
@@ -1315,7 +1315,7 @@
       "captured_at": "2026-06-03T23:11:14.834396+00:00",
       "author": null,
       "contributor": "unknown",
-      "community": 2,
+      "community": 3,
       "norm_label": "androidx.media3.common.effect (marker interface)",
       "id": "effect_media3_interface"
     },
@@ -1354,7 +1354,7 @@
       "captured_at": "2026-06-03T23:11:14.834396+00:00",
       "author": null,
       "contributor": "unknown",
-      "community": 2,
+      "community": 3,
       "norm_label": "getdurationaftereffectapplied(durationus: long): long",
       "id": "getdurationaftereffectapplied"
     },
@@ -1445,7 +1445,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "xeffect (executor utility)",
       "id": "xeffect"
     },
@@ -1458,7 +1458,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "xviewfinder composable",
       "id": "xviewfinder_composable"
     },
@@ -1471,7 +1471,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "xviewmodel (surfacerequest manager)",
       "id": "xviewmodel"
     },
@@ -1484,7 +1484,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "xscreen composable",
       "id": "xscreen_composable"
     },
@@ -1497,7 +1497,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "cameraxviewfinder (compose integration)",
       "id": "cameraxviewfinder_compose"
     },
@@ -1510,7 +1510,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "surfacerequest (camerax frame surface)",
       "id": "surfacerequest"
     },
@@ -1523,7 +1523,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "preview (camerax preview usecase)",
       "id": "preview_camerax"
     },
@@ -1536,7 +1536,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "camerax camera pipeline",
       "id": "camerax_pipeline"
     },
@@ -1549,7 +1549,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "fx package (effects/utilities)",
       "id": "fx_package"
     },
@@ -1578,6 +1578,267 @@
       "community": 5,
       "norm_label": "matrixtransformation (3x3 vertex shader matrix)",
       "id": "matrixtransformation"
+    },
+    {
+      "label": "MainScreenTest.kt",
+      "file_type": "code",
+      "source_file": "androidTest/java/com/greeffer/xcam/ui/main/MainScreenTest.kt",
+      "source_location": "L1",
+      "id": "androidtest_java_com_greeffer_xcam_ui_main_mainscreentest_kt",
+      "community": 14,
+      "norm_label": "mainscreentest.kt"
+    },
+    {
+      "label": "CameraScaffold.kt",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CameraScaffold.kt",
+      "source_location": "L1",
+      "id": "main_kotlin_com_greeffer_xcam_fx_x_camerascaffold_kt",
+      "community": 11,
+      "norm_label": "camerascaffold.kt"
+    },
+    {
+      "label": "CameraScaffold()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CameraScaffold.kt",
+      "source_location": "L57",
+      "id": "x_camerascaffold_camerascaffold",
+      "community": 11,
+      "norm_label": "camerascaffold()"
+    },
+    {
+      "label": "takePicture()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CameraScaffold.kt",
+      "source_location": "L143",
+      "id": "x_camerascaffold_takepicture",
+      "community": 11,
+      "norm_label": "takepicture()"
+    },
+    {
+      "label": "ClassicSepiaEffect.kt",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
+      "source_location": "L1",
+      "id": "main_kotlin_com_greeffer_xcam_fx_x_classicsepiaeffect_kt",
+      "community": 6,
+      "norm_label": "classicsepiaeffect.kt"
+    },
+    {
+      "label": ".configureExtraUniforms()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
+      "source_location": "L9",
+      "id": "x_classicsepiaeffect_classicsepiaeffect_configureextrauniforms",
+      "community": 6,
+      "norm_label": ".configureextrauniforms()"
+    },
+    {
+      "label": "CopyShaderProgram.kt",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L1",
+      "id": "main_kotlin_com_greeffer_xcam_fx_x_copyshaderprogram_kt",
+      "community": 9,
+      "norm_label": "copyshaderprogram.kt"
+    },
+    {
+      "label": "CopyShaderEffect",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L18",
+      "id": "x_copyshaderprogram_copyshadereffect",
+      "community": 9,
+      "norm_label": "copyshadereffect"
+    },
+    {
+      "label": ".configureExtraUniforms()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L23",
+      "id": "x_copyshaderprogram_copyshadereffect_configureextrauniforms",
+      "community": 9,
+      "norm_label": ".configureextrauniforms()"
+    },
+    {
+      "label": ".toGlShaderProgram()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L25",
+      "id": "x_copyshaderprogram_copyshadereffect_toglshaderprogram",
+      "community": 9,
+      "norm_label": ".toglshaderprogram()"
+    },
+    {
+      "label": "CopyShaderProgram",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L29",
+      "id": "x_copyshaderprogram_copyshaderprogram",
+      "community": 9,
+      "norm_label": "copyshaderprogram"
+    },
+    {
+      "label": ".drawQuad()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L55",
+      "id": "x_copyshaderprogram_copyshaderprogram_drawquad",
+      "community": 9,
+      "norm_label": ".drawquad()"
+    },
+    {
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L59",
+      "id": "x_copyshaderprogram_copyshaderprogram_configure",
+      "community": 9,
+      "norm_label": ".configure()"
+    },
+    {
+      "label": ".drawFrame()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L64",
+      "id": "x_copyshaderprogram_copyshaderprogram_drawframe",
+      "community": 9,
+      "norm_label": ".drawframe()"
+    },
+    {
+      "label": ".release()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L71",
+      "id": "x_copyshaderprogram_copyshaderprogram_release",
+      "community": 9,
+      "norm_label": ".release()"
+    },
+    {
+      "label": "FilterSelectorCameraScreen.kt",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/FilterSelectorCameraScreen.kt",
+      "source_location": "L1",
+      "id": "main_kotlin_com_greeffer_xcam_fx_x_filterselectorcamerascreen_kt",
+      "community": 11,
+      "norm_label": "filterselectorcamerascreen.kt"
+    },
+    {
+      "label": "VignetterShaderProgram.kt",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
+      "source_location": "L1",
+      "id": "main_kotlin_com_greeffer_xcam_fx_x_vignettershaderprogram_kt",
+      "community": 7,
+      "norm_label": "vignettershaderprogram.kt"
+    },
+    {
+      "label": ".configureExtraUniforms()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
+      "source_location": "L9",
+      "id": "x_vignettershaderprogram_vignettereffect_configureextrauniforms",
+      "community": 7,
+      "norm_label": ".configureextrauniforms()"
+    },
+    {
+      "label": "XCamScreen.kt",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
+      "source_location": "L1",
+      "id": "main_kotlin_com_greeffer_xcam_fx_x_xcamscreen_kt",
+      "community": 0,
+      "norm_label": "xcamscreen.kt"
+    },
+    {
+      "label": "XCamViewModel.kt",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
+      "source_location": "L1",
+      "id": "main_kotlin_com_greeffer_xcam_fx_x_xcamviewmodel_kt",
+      "community": 8,
+      "norm_label": "xcamviewmodel.kt"
+    },
+    {
+      "label": "ResourceUiState.kt",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L1",
+      "id": "main_kotlin_com_greeffer_xcam_ui_common_resourceuistate_kt",
+      "community": 13,
+      "norm_label": "resourceuistate.kt"
+    },
+    {
+      "label": "ResourceUiState",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L11",
+      "id": "common_resourceuistate_resourceuistate",
+      "community": 13,
+      "norm_label": "resourceuistate"
+    },
+    {
+      "label": "Loading",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L12",
+      "id": "common_resourceuistate_loading",
+      "community": 13,
+      "norm_label": "loading"
+    },
+    {
+      "label": "Error",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L13",
+      "id": "common_resourceuistate_error",
+      "community": 13,
+      "norm_label": "error"
+    },
+    {
+      "label": "Success",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L14",
+      "id": "common_resourceuistate_success",
+      "community": 13,
+      "norm_label": "success"
+    },
+    {
+      "label": "asResourceState()",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L17",
+      "id": "common_resourceuistate_asresourcestate",
+      "community": 13,
+      "norm_label": "asresourcestate()"
+    },
+    {
+      "label": "MainScreen.kt",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
+      "source_location": "L1",
+      "id": "main_kotlin_com_greeffer_xcam_ui_main_mainscreen_kt",
+      "community": 0,
+      "norm_label": "mainscreen.kt"
+    },
+    {
+      "label": "MainScreenViewModel.kt",
+      "file_type": "code",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreenViewModel.kt",
+      "source_location": "L1",
+      "id": "main_kotlin_com_greeffer_xcam_ui_main_mainscreenviewmodel_kt",
+      "community": 2,
+      "norm_label": "mainscreenviewmodel.kt"
+    },
+    {
+      "label": "MainScreenViewModelTest.kt",
+      "file_type": "code",
+      "source_file": "test/java/com/greeffer/xcam/ui/main/MainScreenViewModelTest.kt",
+      "source_location": "L1",
+      "id": "test_java_com_greeffer_xcam_ui_main_mainscreenviewmodeltest_kt",
+      "community": 2,
+      "norm_label": "mainscreenviewmodeltest.kt"
     }
   ],
   "links": [
@@ -1594,7 +1855,7 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/androidTest/java/com/example/empty_activity/ui/main/MainScreenTest.kt",
+      "source_file": "androidTest/java/com/greeffer/xcam/ui/main/MainScreenTest.kt",
       "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -1604,7 +1865,7 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/androidTest/java/com/example/empty_activity/ui/main/MainScreenTest.kt",
+      "source_file": "androidTest/java/com/greeffer/xcam/ui/main/MainScreenTest.kt",
       "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -1612,11 +1873,21 @@
       "target": "main_mainscreentest_mainscreentest_firstitem_exists"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "androidTest/java/com/greeffer/xcam/ui/main/MainScreenTest.kt",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "androidtest_java_com_greeffer_xcam_ui_main_mainscreentest_kt",
+      "target": "main_mainscreentest_mainscreentest",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "app/src/androidTest/java/com/example/empty_activity/ui/main/MainScreenTest.kt",
+      "source_file": "androidTest/java/com/greeffer/xcam/ui/main/MainScreenTest.kt",
       "source_location": "L16",
       "weight": 1.0,
       "source": "main_mainscreentest_mainscreentest_setup",
@@ -1732,9 +2003,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/data/DataRepository.kt",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_data_datarepository_kt",
-      "target": "data_datarepository_xcamerafilter",
-      "confidence_score": 1.0
+      "target": "data_datarepository_xcamerafilter"
     },
     {
       "relation": "contains",
@@ -1752,9 +2023,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/CameraWithMedia3EffectScreen.kt",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_camerawithmedia3effectscreen_kt",
-      "target": "x_camerawithmedia3effectscreen_camerawithmedia3effectscreen",
-      "confidence_score": 1.0
+      "target": "x_camerawithmedia3effectscreen_camerawithmedia3effectscreen"
     },
     {
       "relation": "contains",
@@ -1762,9 +2033,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/CameraWithMedia3EffectScreen.kt",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_camerawithmedia3effectscreen_kt",
-      "target": "x_camerawithmedia3effectscreen_capturephoto",
-      "confidence_score": 1.0
+      "target": "x_camerawithmedia3effectscreen_capturephoto"
     },
     {
       "relation": "calls",
@@ -1773,9 +2044,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/CameraWithMedia3EffectScreen.kt",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_camerawithmedia3effectscreen_camerawithmedia3effectscreen",
-      "target": "x_camerawithmedia3effectscreen_capturephoto",
-      "confidence_score": 1.0
+      "target": "x_camerawithmedia3effectscreen_capturephoto"
     },
     {
       "relation": "contains",
@@ -1783,9 +2054,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_classicsepiaeffect_kt",
-      "target": "x_classicsepiaeffect_classicsepiaeffect",
-      "confidence_score": 1.0
+      "target": "x_classicsepiaeffect_classicsepiaeffect"
     },
     {
       "relation": "contains",
@@ -1793,9 +2064,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_classicsepiaeffect_kt",
-      "target": "x_classicsepiaeffect_classicsepiashaderprogram",
-      "confidence_score": 1.0
+      "target": "x_classicsepiaeffect_classicsepiashaderprogram"
     },
     {
       "relation": "method",
@@ -1803,8 +2074,28 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_classicsepiaeffect_classicsepiaeffect",
-      "target": "x_classicsepiaeffect_classicsepiaeffect_toglshaderprogram",
+      "target": "x_classicsepiaeffect_classicsepiaeffect_toglshaderprogram"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_fx_x_classicsepiaeffect_kt",
+      "target": "x_classicsepiaeffect_classicsepiaeffect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "x_classicsepiaeffect_classicsepiaeffect",
+      "target": "x_classicsepiaeffect_classicsepiaeffect_configureextrauniforms",
       "confidence_score": 1.0
     },
     {
@@ -1814,9 +2105,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_classicsepiaeffect_classicsepiaeffect_toglshaderprogram",
-      "target": "x_classicsepiaeffect_classicsepiashaderprogram",
-      "confidence_score": 1.0
+      "target": "x_classicsepiaeffect_classicsepiashaderprogram"
     },
     {
       "relation": "method",
@@ -1824,9 +2115,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_classicsepiaeffect_classicsepiashaderprogram",
-      "target": "x_classicsepiaeffect_classicsepiashaderprogram_configure",
-      "confidence_score": 1.0
+      "target": "x_classicsepiaeffect_classicsepiashaderprogram_configure"
     },
     {
       "relation": "method",
@@ -1834,9 +2125,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_classicsepiaeffect_classicsepiashaderprogram",
-      "target": "x_classicsepiaeffect_classicsepiashaderprogram_drawframe",
-      "confidence_score": 1.0
+      "target": "x_classicsepiaeffect_classicsepiashaderprogram_drawframe"
     },
     {
       "relation": "method",
@@ -1844,9 +2135,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/ClassicSepiaEffect.kt",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_classicsepiaeffect_classicsepiashaderprogram",
-      "target": "x_classicsepiaeffect_classicsepiashaderprogram_release",
-      "confidence_score": 1.0
+      "target": "x_classicsepiaeffect_classicsepiashaderprogram_release"
     },
     {
       "relation": "contains",
@@ -1854,9 +2145,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/FilterSelectorCameraScreen.kt",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_filterselectorcamerascreen_kt",
-      "target": "x_filterselectorcamerascreen_filterselectorcamerascreen",
-      "confidence_score": 1.0
+      "target": "x_filterselectorcamerascreen_filterselectorcamerascreen"
     },
     {
       "relation": "contains",
@@ -1864,9 +2155,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/FilterSelectorCameraScreen.kt",
       "source_location": "L243",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_filterselectorcamerascreen_kt",
-      "target": "x_filterselectorcamerascreen_takepicture",
-      "confidence_score": 1.0
+      "target": "x_filterselectorcamerascreen_takepicture"
     },
     {
       "relation": "calls",
@@ -1875,17 +2166,17 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/FilterSelectorCameraScreen.kt",
       "source_location": "L225",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_filterselectorcamerascreen_filterselectorcamerascreen",
-      "target": "x_filterselectorcamerascreen_takepicture",
-      "confidence_score": 1.0
+      "target": "x_filterselectorcamerascreen_takepicture"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
-      "source_location": "L71",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
+      "source_location": "L72",
       "weight": 1.0,
       "source": "x_xcamscreen_xcam",
       "target": "x_filterselectorcamerascreen_filterselectorcamerascreen"
@@ -1893,12 +2184,33 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/FilterSelectorCameraScreen.kt",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_fx_x_filterselectorcamerascreen_kt",
+      "target": "x_filterselectorcamerascreen_filterselectorcamerascreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/FilterSelectorCameraScreen.kt",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "x_filterselectorcamerascreen_filterselectorcamerascreen",
+      "target": "x_camerascaffold_camerascaffold"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/sepiaSamples.kt",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_sepiasamples_kt",
-      "target": "x_sepiasamples_applysepiafilter",
-      "confidence_score": 1.0
+      "target": "x_sepiasamples_applysepiafilter"
     },
     {
       "relation": "contains",
@@ -1906,9 +2218,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/sepiaSamples.kt",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_sepiasamples_kt",
-      "target": "x_sepiasamples_setcustomcolorfilter",
-      "confidence_score": 1.0
+      "target": "x_sepiasamples_setcustomcolorfilter"
     },
     {
       "relation": "contains",
@@ -1916,9 +2228,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_vignettershaderprogram_kt",
-      "target": "x_vignettershaderprogram_vignettereffect",
-      "confidence_score": 1.0
+      "target": "x_vignettershaderprogram_vignettereffect"
     },
     {
       "relation": "contains",
@@ -1926,9 +2238,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_vignettershaderprogram_kt",
-      "target": "x_vignettershaderprogram_vignettershaderprogram",
-      "confidence_score": 1.0
+      "target": "x_vignettershaderprogram_vignettershaderprogram"
     },
     {
       "relation": "method",
@@ -1936,8 +2248,28 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_vignettershaderprogram_vignettereffect",
-      "target": "x_vignettershaderprogram_vignettereffect_toglshaderprogram",
+      "target": "x_vignettershaderprogram_vignettereffect_toglshaderprogram"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_fx_x_vignettershaderprogram_kt",
+      "target": "x_vignettershaderprogram_vignettereffect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "x_vignettershaderprogram_vignettereffect",
+      "target": "x_vignettershaderprogram_vignettereffect_configureextrauniforms",
       "confidence_score": 1.0
     },
     {
@@ -1947,9 +2279,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_vignettershaderprogram_vignettereffect_toglshaderprogram",
-      "target": "x_vignettershaderprogram_vignettershaderprogram",
-      "confidence_score": 1.0
+      "target": "x_vignettershaderprogram_vignettershaderprogram"
     },
     {
       "relation": "method",
@@ -1957,9 +2289,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_vignettershaderprogram_vignettershaderprogram",
-      "target": "x_vignettershaderprogram_vignettershaderprogram_configure",
-      "confidence_score": 1.0
+      "target": "x_vignettershaderprogram_vignettershaderprogram_configure"
     },
     {
       "relation": "method",
@@ -1967,9 +2299,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_vignettershaderprogram_vignettershaderprogram",
-      "target": "x_vignettershaderprogram_vignettershaderprogram_drawframe",
-      "confidence_score": 1.0
+      "target": "x_vignettershaderprogram_vignettershaderprogram_drawframe"
     },
     {
       "relation": "method",
@@ -1977,9 +2309,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/VignetterShaderProgram.kt",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_vignettershaderprogram_vignettershaderprogram",
-      "target": "x_vignettershaderprogram_vignettershaderprogram_release",
-      "confidence_score": 1.0
+      "target": "x_vignettershaderprogram_vignettershaderprogram_release"
     },
     {
       "relation": "contains",
@@ -1987,9 +2319,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamscreen_kt",
-      "target": "x_xcamscreen_xcamscreen",
-      "confidence_score": 1.0
+      "target": "x_xcamscreen_xcamscreen"
     },
     {
       "relation": "contains",
@@ -1997,19 +2329,40 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamscreen_kt",
-      "target": "x_xcamscreen_xcam",
-      "confidence_score": 1.0
+      "target": "x_xcamscreen_xcam"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
-      "source_location": "L36",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
+      "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_xcamscreen_xcamscreen",
-      "target": "x_xcamscreen_xcam",
+      "target": "x_xcamscreen_xcam"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "main_mainscreen_mainscreen",
+      "target": "x_xcamscreen_xcamscreen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_fx_x_xcamscreen_kt",
+      "target": "x_xcamscreen_xcamscreen",
       "confidence_score": 1.0
     },
     {
@@ -2017,19 +2370,8 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
-      "source_location": "L29",
-      "weight": 1.0,
-      "source": "main_mainscreen_mainscreen",
-      "target": "x_xcamscreen_xcamscreen"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
-      "source_location": "L67",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
+      "source_location": "L68",
       "weight": 1.0,
       "source": "x_xcamscreen_xcam",
       "target": "main_mainscreen_greeting"
@@ -2037,12 +2379,22 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/XCamScreen.kt",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_fx_x_xcamscreen_kt",
+      "target": "x_xcamscreen_xcam",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamviewmodel_kt",
-      "target": "x_xcamviewmodel_xcamviewmodel",
-      "confidence_score": 1.0
+      "target": "x_xcamviewmodel_xcamviewmodel"
     },
     {
       "relation": "contains",
@@ -2050,9 +2402,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamviewmodel_kt",
-      "target": "x_xcamviewmodel_xcamuistate",
-      "confidence_score": 1.0
+      "target": "x_xcamviewmodel_xcamuistate"
     },
     {
       "relation": "contains",
@@ -2060,9 +2412,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamviewmodel_kt",
-      "target": "x_xcamviewmodel_loading",
-      "confidence_score": 1.0
+      "target": "x_xcamviewmodel_loading"
     },
     {
       "relation": "contains",
@@ -2070,9 +2422,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamviewmodel_kt",
-      "target": "x_xcamviewmodel_error",
-      "confidence_score": 1.0
+      "target": "x_xcamviewmodel_error"
     },
     {
       "relation": "contains",
@@ -2080,28 +2432,38 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xcamviewmodel_kt",
-      "target": "x_xcamviewmodel_success",
-      "confidence_score": 1.0
+      "target": "x_xcamviewmodel_success"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
-      "source_location": "L29",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
+      "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_xcamviewmodel_xcamviewmodel",
-      "target": "x_xcamviewmodel_xcamviewmodel_producesurfacerequests",
-      "confidence_score": 1.0
+      "target": "x_xcamviewmodel_xcamviewmodel_producesurfacerequests"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
-      "source_location": "L36",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
+      "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "x_xcamviewmodel_xcamviewmodel",
-      "target": "x_xcamviewmodel_xcamviewmodel_ontap",
+      "target": "x_xcamviewmodel_xcamviewmodel_ontap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/XCamViewModel.kt",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_fx_x_xcamviewmodel_kt",
+      "target": "x_xcamviewmodel_xcamviewmodel",
       "confidence_score": 1.0
     },
     {
@@ -2110,9 +2472,9 @@
       "source_file": "app/src/main/kotlin/com/greeffer/xcam/fx/x/XViewfinder.kt",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_src_main_kotlin_com_greeffer_xcam_fx_x_xviewfinder_kt",
-      "target": "x_xviewfinder_xviewfinder",
-      "confidence_score": 1.0
+      "target": "x_xviewfinder_xviewfinder"
     },
     {
       "relation": "contains",
@@ -2190,8 +2552,8 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
-      "source_location": "L42",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
+      "source_location": "L46",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "main_mainscreen_mainscreen",
@@ -2201,23 +2563,33 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
-      "source_location": "L56",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
+      "source_location": "L60",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "main_mainscreen_mainscreen",
-      "target": "main_mainscreen_mainscreenpreview"
+      "source": "main_mainscreen_mainscreenpreview",
+      "target": "main_mainscreen_mainscreen"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
-      "source_location": "L62",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
+      "source_location": "L66",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "main_mainscreen_mainscreen",
-      "target": "main_mainscreen_mainscreenportraitpreview"
+      "source": "main_mainscreen_mainscreenportraitpreview",
+      "target": "main_mainscreen_mainscreen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_ui_main_mainscreen_kt",
+      "target": "main_mainscreen_mainscreen",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2229,6 +2601,36 @@
       "weight": 1.0,
       "source": "fx_xscreen_xcamscreen",
       "target": "main_mainscreen_greeting"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_ui_main_mainscreen_kt",
+      "target": "main_mainscreen_greeting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_ui_main_mainscreen_kt",
+      "target": "main_mainscreen_mainscreenpreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreen.kt",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_ui_main_mainscreen_kt",
+      "target": "main_mainscreen_mainscreenportraitpreview",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2285,22 +2687,32 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
-      "source_location": "L15",
+      "source_file": "test/java/com/greeffer/xcam/ui/main/MainScreenViewModelTest.kt",
+      "source_location": "L16",
       "weight": 1.0,
-      "source": "main_mainscreenviewmodel_mainscreenviewmodel",
-      "target": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_initiallyloading"
+      "source": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_initiallyloading",
+      "target": "main_mainscreenviewmodel_mainscreenviewmodel"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
-      "source_location": "L22",
+      "source_file": "test/java/com/greeffer/xcam/ui/main/MainScreenViewModelTest.kt",
+      "source_location": "L23",
       "weight": 1.0,
-      "source": "main_mainscreenviewmodel_mainscreenviewmodel",
-      "target": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_onitemsaved_isdisplayed"
+      "source": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_onitemsaved_isdisplayed",
+      "target": "main_mainscreenviewmodel_mainscreenviewmodel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/main/MainScreenViewModel.kt",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_ui_main_mainscreenviewmodel_kt",
+      "target": "main_mainscreenviewmodel_mainscreenviewmodel",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2325,8 +2737,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
-      "source_location": "L12",
+      "source_file": "test/java/com/greeffer/xcam/ui/main/MainScreenViewModelTest.kt",
+      "source_location": "L13",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "main_mainscreenviewmodeltest_mainscreenviewmodeltest",
@@ -2335,19 +2747,29 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
-      "source_location": "L19",
+      "source_file": "test/java/com/greeffer/xcam/ui/main/MainScreenViewModelTest.kt",
+      "source_location": "L20",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "main_mainscreenviewmodeltest_mainscreenviewmodeltest",
       "target": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_onitemsaved_isdisplayed"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/java/com/greeffer/xcam/ui/main/MainScreenViewModelTest.kt",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "test_java_com_greeffer_xcam_ui_main_mainscreenviewmodeltest_kt",
+      "target": "main_mainscreenviewmodeltest_mainscreenviewmodeltest",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
-      "source_location": "L15",
+      "source_file": "test/java/com/greeffer/xcam/ui/main/MainScreenViewModelTest.kt",
+      "source_location": "L16",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_initiallyloading",
@@ -2357,12 +2779,22 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/test/java/com/example/empty_activity/ui/main/MainScreenViewModelTest.kt",
-      "source_location": "L22",
+      "source_file": "test/java/com/greeffer/xcam/ui/main/MainScreenViewModelTest.kt",
+      "source_location": "L23",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "main_mainscreenviewmodeltest_mainscreenviewmodeltest_uistate_onitemsaved_isdisplayed",
       "target": "main_mainscreenviewmodeltest_fakemymodelrepository"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test/java/com/greeffer/xcam/ui/main/MainScreenViewModelTest.kt",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "test_java_com_greeffer_xcam_ui_main_mainscreenviewmodeltest_kt",
+      "target": "main_mainscreenviewmodeltest_fakemymodelrepository",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3164,6 +3596,222 @@
       "weight": 1.0,
       "source": "preview_camerax",
       "target": "camerax_pipeline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CameraScaffold.kt",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_fx_x_camerascaffold_kt",
+      "target": "x_camerascaffold_camerascaffold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CameraScaffold.kt",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_fx_x_camerascaffold_kt",
+      "target": "x_camerascaffold_takepicture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CameraScaffold.kt",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "x_camerascaffold_camerascaffold",
+      "target": "x_camerascaffold_takepicture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_fx_x_copyshaderprogram_kt",
+      "target": "x_copyshaderprogram_copyshadereffect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_fx_x_copyshaderprogram_kt",
+      "target": "x_copyshaderprogram_copyshaderprogram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "x_copyshaderprogram_copyshadereffect",
+      "target": "x_copyshaderprogram_copyshadereffect_configureextrauniforms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "x_copyshaderprogram_copyshadereffect",
+      "target": "x_copyshaderprogram_copyshadereffect_toglshaderprogram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "x_copyshaderprogram_copyshaderprogram_configure",
+      "target": "x_copyshaderprogram_copyshadereffect_configureextrauniforms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "x_copyshaderprogram_copyshadereffect_toglshaderprogram",
+      "target": "x_copyshaderprogram_copyshaderprogram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "x_copyshaderprogram_copyshaderprogram",
+      "target": "x_copyshaderprogram_copyshaderprogram_drawquad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "x_copyshaderprogram_copyshaderprogram",
+      "target": "x_copyshaderprogram_copyshaderprogram_configure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "x_copyshaderprogram_copyshaderprogram",
+      "target": "x_copyshaderprogram_copyshaderprogram_drawframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "x_copyshaderprogram_copyshaderprogram",
+      "target": "x_copyshaderprogram_copyshaderprogram_release",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/fx/x/CopyShaderProgram.kt",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "x_copyshaderprogram_copyshaderprogram_drawframe",
+      "target": "x_copyshaderprogram_copyshaderprogram_drawquad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_ui_common_resourceuistate_kt",
+      "target": "common_resourceuistate_resourceuistate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_ui_common_resourceuistate_kt",
+      "target": "common_resourceuistate_loading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_ui_common_resourceuistate_kt",
+      "target": "common_resourceuistate_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_ui_common_resourceuistate_kt",
+      "target": "common_resourceuistate_success",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "main_kotlin_com_greeffer_xcam_ui_common_resourceuistate_kt",
+      "target": "common_resourceuistate_asresourcestate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "common_resourceuistate_asresourcestate",
+      "target": "common_resourceuistate_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main/kotlin/com/greeffer/xcam/ui/common/ResourceUiState.kt",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "common_resourceuistate_asresourcestate",
+      "target": "common_resourceuistate_success",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [
@@ -3217,5 +3865,5 @@
       "source_file": "raw/developer_android_com_reference_kotlin_androidx_media3_common_Effect.md"
     }
   ],
-  "built_at_commit": "503c2a911d02e47287a9e62277d9599ef0b53e6e"
+  "built_at_commit": "29762731b03e6578a30577a3a03729bf9856ad46"
 }

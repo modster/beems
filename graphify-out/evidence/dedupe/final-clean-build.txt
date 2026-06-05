@@ -1,0 +1,60 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: clean :app:testDebugUnitTest :app:assembleDebug
+> Task :app:preBuild UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:clean
+> Task :app:kspDebugKotlin SKIPPED
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :app:generateDebugResources FROM-CACHE
+> Task :app:extractDeepLinksDebug FROM-CACHE
+> Task :app:javaPreCompileDebug FROM-CACHE
+> Task :app:generateDebugGlobalSynthetics FROM-CACHE
+> Task :app:desugarDebugFileDependencies FROM-CACHE
+> Task :app:packageDebugResources FROM-CACHE
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets FROM-CACHE
+> Task :app:processDebugNavigationResources FROM-CACHE
+> Task :app:parseDebugLocalResources FROM-CACHE
+> Task :app:checkDebugAarMetadata
+> Task :app:processDebugMainManifest FROM-CACHE
+> Task :app:compileDebugNavigationResources FROM-CACHE
+> Task :app:processDebugManifest FROM-CACHE
+> Task :app:generateDebugRFile FROM-CACHE
+> Task :app:processDebugManifestForPackage FROM-CACHE
+> Task :app:mergeDebugNativeLibs
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeLibDexDebug FROM-CACHE
+> Task :app:stripDebugDebugSymbols
+> Task :app:compileDebugKotlin FROM-CACHE
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:processDebugJavaRes
+> Task :app:mergeDebugResources FROM-CACHE
+> Task :app:processDebugResources FROM-CACHE
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:kspDebugUnitTestKotlin SKIPPED
+> Task :app:dexBuilderDebug FROM-CACHE
+> Task :app:mergeProjectDexDebug FROM-CACHE
+> Task :app:mergeExtDexDebug FROM-CACHE
+> Task :app:compileDebugUnitTestKotlin FROM-CACHE
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes
+> Task :app:testDebugUnitTest FROM-CACHE
+> Task :app:mergeDebugJavaResource
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:createDebugApkListingFileRedirect
+
+BUILD SUCCESSFUL in 30s
+43 actionable tasks: 19 executed, 24 from cache
+Configuration cache entry stored.

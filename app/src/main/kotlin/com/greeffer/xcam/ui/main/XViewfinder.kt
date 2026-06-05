@@ -1,4 +1,4 @@
-package com.greeffer.xcam.fx.x
+package com.greeffer.xcam.ui.main
 
 import androidx.camera.compose.CameraXViewfinder
 import androidx.camera.core.SurfaceRequest
@@ -14,17 +14,19 @@ import androidx.compose.ui.input.pointer.pointerInput
 
 @Composable
 fun XViewfinder(
-  vm: XCamViewModel,
-  modifier: Modifier = Modifier,
-) {
+    vm: MainScreenViewModel,
+    modifier: Modifier = Modifier,
+    onItemClick: Any,
+)
+{
     val currentSurfaceRequest: SurfaceRequest? by vm.surfaceRequests.collectAsState()
-
+    
     currentSurfaceRequest?.let { surfaceRequest ->
-//        val currentSurfaceRequest: SurfaceRequest? by vm.surfaceRequests.collectAsState()
-
+        //        val currentSurfaceRequest: SurfaceRequest? by vm.surfaceRequests.collectAsState()
+        
         // CoordinateTransformer for transforming from Offsets to Surface coordinates
         val coordinateTransformer = remember { MutableCoordinateTransformer() }
-
+        
         CameraXViewfinder(
             surfaceRequest = surfaceRequest,
             implementationMode = ImplementationMode.EXTERNAL,

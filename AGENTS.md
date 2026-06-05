@@ -7,16 +7,17 @@ Guidance for AI coding agents working in this repository.
 - Android app with a single module: `:app`
 - Kotlin + Jetpack Compose (Material 3)
 - Navigation stack uses Navigation 3 (`androidx.navigation3`), not string-route Navigation Compose patterns
-- Toolchain: AGP 9.0.1, Gradle 9.1.0, Kotlin 2.3.20, Java toolchain 17
-- SDK levels: minSdk 24, target/compileSdk 36
+- Toolchain: AGP 9.2.1, Gradle 9.4.1, Kotlin 2.3.20, Java toolchain 17
+- SDK levels: minSdk 24, target/compileSdk 37
 
 ## Source of Truth
 
 - Dependency and plugin versions: `gradle/libs.versions.toml`
 - App build config: `app/build.gradle.kts`
-- Entry point: `app/src/main/java/com/example/xcam/MainActivity.kt`
-- Navigation wiring: `app/src/main/java/com/example/xcam/Navigation.kt`
-- Camera integration: `app/src/main/java/com/example/xcam/CameraXViewfinder.kt`
+- Entry point: `app/src/main/kotlin/com/greeffer/xcam/MainActivity.kt`
+- Navigation wiring: `app/src/main/kotlin/com/greeffer/xcam/Navigation.kt`
+- Navigation keys: `app/src/main/kotlin/com/greeffer/xcam/NavigationKeys.kt`
+- Camera integration: `app/src/main/kotlin/com/greeffer/xcam/fx/x/CameraWithMedia3EffectScreen.kt`
 
 ## Common Commands
 
@@ -104,10 +105,11 @@ Commands:
 
 ## Coding Conventions Inferred From Current Code
 
-- Keep UI code in `app/src/main/java/com/example/xcam/ui/main`
-- Keep non-UI data logic in `app/src/main/java/com/example/xcam/data`
-- Keep effects/utilities in `app/src/main/java/com/example/xcam/fx`
+- Keep UI code in `app/src/main/kotlin/com/greeffer/xcam/ui/main`
+- Keep non-UI data logic in `app/src/main/kotlin/com/greeffer/xcam/data`
+- Keep effects/utilities in `app/src/main/kotlin/com/greeffer/xcam/fx`
 - Compose + ViewModel is the active pattern for screen state
+- Navigation destinations are typed `NavKey` objects (`@Serializable`) in `app/src/main/kotlin/com/greeffer/xcam/NavigationKeys.kt`
 - Edge-to-edge is already enabled; preserve this behavior in activity/screen updates
 
 ## Guardrails For Edits

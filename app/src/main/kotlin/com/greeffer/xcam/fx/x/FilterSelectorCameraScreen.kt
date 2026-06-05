@@ -2,8 +2,12 @@ package com.greeffer.xcam.fx.x
 
 
 import android.Manifest
+import android.content.ContentValues
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Build
+import android.os.Environment
+import android.provider.MediaStore
 import android.util.Log
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -74,7 +78,7 @@ fun FilterSelectorCameraScreen()
     var surfaceRequest by remember { mutableStateOf<SurfaceRequest?>(null) }
     var hasCameraPermission by remember {
         mutableStateOf(
-            ContextCompat.checkSelfPermission(context , Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED
+            ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED
         )
     }
     var requestedPermission by remember { mutableStateOf(false) }
@@ -83,34 +87,34 @@ fun FilterSelectorCameraScreen()
     ) { granted ->
         hasCameraPermission = granted
     }
-
+    
     // 1. Keep track of the currently selected filter asset
-    var selectedFilter : XCameraFilter by remember { mutableStateOf(XCameraFilter.NONE) }
-
+    var selectedFilter: XCameraFilter by remember { mutableStateOf(XCameraFilter.NONE) }
+    
     val preview = remember { Preview.Builder().build() }
     val imageCapture = remember { ImageCapture.Builder().build() }
-
+    
     // 2. Initialize the Media3 Camera Pipeline Adapter
     val media3Effect = remember {
         Media3Effect(
-            context ,
-            IMAGE_CAPTURE or PREVIEW or VIDEO_CAPTURE , // Applies to both live preview and taken photo
+            context,
+            IMAGE_CAPTURE or PREVIEW or VIDEO_CAPTURE, // Applies to both live preview and taken photo
             mainExecutor
-        ) { error -> Log.e("FilterSelector" , "Media3 execution error: ${error.message}" , error) }
+        ) { error -> Log.e("FilterSelector", "Media3 execution error: ${error.message}", error) }
     }
-
-    LaunchedEffect(hasCameraPermission , requestedPermission) {
+    
+    LaunchedEffect(hasCameraPermission, requestedPermission) {
         if (! hasCameraPermission && ! requestedPermission)
         {
             requestedPermission = true
             permissionLauncher.launch(Manifest.permission.CAMERA)
         }
     }
-
+    
     // 3. Bind the Camera Lifecycle
     LaunchedEffect(hasCameraPermission) {
         if (! hasCameraPermission) return@LaunchedEffect
-
+        
         preview.setSurfaceProvider { request ->
             surfaceRequest = request
         }
@@ -119,121 +123,122 @@ fun FilterSelectorCameraScreen()
     LaunchedEffect(selectedFilter) {
         media3Effect.setEffects(selectedFilter.getMedia3Effects())
     }
-
+    
     // 4. Bind CameraX Use Cases once during configuration initialization
     LaunchedEffect(Unit) {
         val cameraProvider = ProcessCameraProvider.getInstance(context).get()
         val useCaseGroup = UseCaseGroup.Builder()
-            .addUseCase(preview)
-            .addUseCase(imageCapture)
-            .addEffect(media3Effect)
-            .build()
-
+          .addUseCase(preview)
+          .addUseCase(imageCapture)
+          .addEffect(media3Effect)
+          .build()
+        
         try
         {
             cameraProvider.unbindAll()
             cameraProvider.bindToLifecycle(
-                lifecycleOwner ,
-                CameraSelector.DEFAULT_BACK_CAMERA ,
+                lifecycleOwner,
+                CameraSelector.DEFAULT_BACK_CAMERA,
                 useCaseGroup
             )
         }
-        catch (e : Exception)
+        catch (e: Exception)
         {
-            Log.e("FilterSelector" , "Camera initialization binding failed" , e)
+            Log.e("FilterSelector", "Camera initialization binding failed", e)
         }
     }
-
+    
     // 5. Build User Interface Layout
     Box(modifier = Modifier.fillMaxSize()) {
+        // Full screen camera stream view finder wrapper
+        surfaceRequest?.let { request ->
+            CameraXViewfinder(
+                surfaceRequest = request,
+                modifier = Modifier.fillMaxSize()
+            )
+        }
+        
         if (! hasCameraPermission)
         {
             Button(
-                onClick = { permissionLauncher.launch(Manifest.permission.CAMERA) } ,
+                onClick = { permissionLauncher.launch(Manifest.permission.CAMERA) },
                 modifier = Modifier.align(Alignment.Center)
             ) {
                 Text("Grant camera permission")
             }
             return@Box
         }
-
-        // Full screen camera stream view finder wrapper
-        surfaceRequest?.let { request ->
-            CameraXViewfinder(
-                surfaceRequest = request ,
-                modifier = Modifier.fillMaxSize()
-            )
-        }
-
+        
         // Bottom control dashboard containing Selector and Trigger button
         Column(
             modifier = Modifier
-                .align(Alignment.BottomCenter)
-                .fillMaxWidth()
-                .background(Color.Black.copy(alpha = 0.4f))
-                .padding(vertical = 24.dp) ,
+              .align(Alignment.BottomCenter)
+              .fillMaxWidth()
+              .background(Color.Black.copy(alpha = 0.4f))
+              .padding(vertical = 24.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-
+            
             // Dynamic Horizontal Filter Option Selector Bar
             LazyRow(
-                contentPadding = PaddingValues(horizontal = 16.dp) ,
-                horizontalArrangement = Arrangement.spacedBy(12.dp) ,
+                contentPadding = PaddingValues(horizontal = 16.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
                 modifier = Modifier.fillMaxWidth()
             ) {
                 items(XCameraFilter.values()) { filter ->
                     val isSelected = filter == selectedFilter
-
+                    
                     Card(
                         colors = CardDefaults.cardColors(
                             containerColor = if (isSelected) MaterialTheme.colorScheme.primary else Color.DarkGray
-                        ) ,
+                        ),
                         modifier = Modifier
-                            .width(85.dp)
-                            .height(55.dp)
-                            .clickable(
-                                indication = null ,
-                                interactionSource = remember { MutableInteractionSource() }
-                            ) { selectedFilter = filter }
+                          .width(85.dp)
+                          .height(55.dp)
+                          .clickable(
+                              indication = null,
+                              interactionSource = remember { MutableInteractionSource() }
+                          ) { selectedFilter = filter }
                     ) {
                         Box(
-                            contentAlignment = Alignment.Center ,
+                            contentAlignment = Alignment.Center,
                             modifier = Modifier.fillMaxSize()
                         ) {
                             Text(
-                                text = filter.displayName ,
-                                color = if (isSelected) MaterialTheme.colorScheme.onPrimary else Color.White ,
-                                style = MaterialTheme.typography.bodyMedium ,
+                                text = filter.displayName,
+                                color = if (isSelected) MaterialTheme.colorScheme.onPrimary else Color.White,
+                                style = MaterialTheme.typography.bodyMedium,
                                 fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
                             )
                         }
                     }
                 }
             }
-
+            
+            
             Spacer(modifier = Modifier.height(20.dp))
-
+            
             // Traditional circular camera capture button
             Box(
                 modifier = Modifier
-                    .size(72.dp)
-                    .clip(CircleShape)
-                    .background(Color.White)
-                    .clickable(
-                        indication = null ,
-                        interactionSource = remember { MutableInteractionSource() }
-                    ) { takePicture(context , imageCapture , mainExecutor) } ,
+                  .size(72.dp)
+                  .clip(CircleShape)
+                  .background(Color.White)
+                  .clickable(
+                      indication = null,
+                      interactionSource = remember { MutableInteractionSource() }
+                  ) { takePicture(context, imageCapture, mainExecutor) },
                 contentAlignment = Alignment.Center
             ) {
                 Box(
                     modifier = Modifier
-                        .size(62.dp)
-                        .clip(CircleShape)
-                        .background(Color.Transparent)
-                        .run {
-                            // Give it a camera shutter concentric ring appearance
-                            this.background(Color.Black.copy(alpha = 0.1f))
-                        }
+                      .size(62.dp)
+                      .clip(CircleShape)
+                      .background(Color.Transparent)
+                      .run {
+                          // Give it a camera shutter concentric ring appearance
+                          this.background(Color.Black.copy(alpha = 0.1f))
+                      }
                 )
             }
         }
@@ -241,31 +246,71 @@ fun FilterSelectorCameraScreen()
 }
 
 private fun takePicture(
-    context : android.content.Context ,
-    imageCapture : ImageCapture ,
-    executor : java.util.concurrent.Executor
+    context: android.content.Context,
+    imageCapture: ImageCapture,
+    executor: java.util.concurrent.Executor
 )
 {
-    val photoFile = File(
-        context.cacheDir ,
-        "IMG_${SimpleDateFormat("yyyyMMdd_HHmmss" , Locale.US).format(Date())}.jpg"
-    )
-    val outputOptions = ImageCapture.OutputFileOptions
-        .Builder(photoFile).build()
-    imageCapture.takePicture(
-        outputOptions ,
-        executor ,
-        object : ImageCapture.OnImageSavedCallback
-        {
-            override fun onImageSaved(outputFileResults : ImageCapture.OutputFileResults)
-            {
-                Log.d("FilterSelector" , "Photo saved: ${outputFileResults.savedUri ?: Uri.fromFile(photoFile)}")
-            }
-
-            override fun onError(exception : ImageCaptureException)
-            {
-                Log.e("FilterSelector" , "Photo capture failed" , exception)
-            }
+    val appName = "XCam"
+    val timestamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(Date())
+    
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q)
+    {
+        // Android 10+ (API 29+): Use MediaStore for scoped storage
+        val contentValues = ContentValues().apply {
+            put(MediaStore.Images.Media.DISPLAY_NAME, "IMG_$timestamp.jpg")
+            put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
+            put(MediaStore.Images.Media.RELATIVE_PATH, "${Environment.DIRECTORY_PICTURES}/$appName")
         }
-    )
+        
+        val outputOptions = ImageCapture.OutputFileOptions.Builder(
+            context.contentResolver,
+            MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+            contentValues
+        ).build()
+        
+        imageCapture.takePicture(
+            outputOptions,
+            executor,
+            object: ImageCapture.OnImageSavedCallback
+            {
+                override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults)
+                {
+                    Log.d("FilterSelector", "Photo saved: ${outputFileResults.savedUri}")
+                }
+                
+                override fun onError(exception: ImageCaptureException)
+                {
+                    Log.e("FilterSelector", "Photo capture failed", exception)
+                }
+            }
+        )
+    }
+    else
+    {
+        // Android 9 and below: Use legacy external storage
+        val picturesDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
+        val appDir = File(picturesDir, appName).apply { mkdirs() }
+        val photoFile = File(appDir, "IMG_$timestamp.jpg")
+        
+        val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
+        
+        imageCapture.takePicture(
+            outputOptions,
+            executor,
+            object: ImageCapture.OnImageSavedCallback
+            {
+                override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults)
+                {
+                    val savedUri = outputFileResults.savedUri ?: Uri.fromFile(photoFile)
+                    Log.d("FilterSelector", "Photo saved: $savedUri")
+                }
+                
+                override fun onError(exception: ImageCaptureException)
+                {
+                    Log.e("FilterSelector", "Photo capture failed", exception)
+                }
+            }
+        )
+    }
 }

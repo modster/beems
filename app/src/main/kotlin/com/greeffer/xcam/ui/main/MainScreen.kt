@@ -1,66 +1,43 @@
 package com.greeffer.xcam.ui.main
 
-import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation3.runtime.NavKey
 import com.greeffer.xcam.data.DefaultDataRepository
 import com.greeffer.xcam.fx.x.XCamScreen
-import com.greeffer.xcam.theme.XCamTheme
+import com.greeffer.xcam.ui.common.ResourceUiState
 
 @Composable
 fun MainScreen(
-  onItemClick: (NavKey) -> Unit,
-  modifier: Modifier = Modifier,
-  viewModel: MainScreenViewModel = viewModel { MainScreenViewModel(DefaultDataRepository()) },
-) {
+    onItemClick: (NavKey) -> Unit,
+    modifier: Modifier = Modifier,
+    viewModel: MainScreenViewModel = viewModel { MainScreenViewModel(DefaultDataRepository()) },
+)
+{
     val state by viewModel.uiState.collectAsStateWithLifecycle()
-    when (state) {
-        MainScreenUiState.Loading -> {
+    when (state)
+    {
+        ResourceUiState.Loading    ->
+        {
             Text("Loading...")
         }
-
-        is MainScreenUiState.Success -> {
+        
+        is ResourceUiState.Success ->
+        {
             XCamScreen(
-              onItemClick = onItemClick, modifier = modifier,
+                modifier = modifier,
+                onItemClick = onItemClick
             )
         }
-
-        is MainScreenUiState.Error -> {
-            Text("Error loading data: ${(state as MainScreenUiState.Error).throwable.message}")
+        
+        is ResourceUiState.Error   ->
+        {
+            Text("Error loading data: ${(state as ResourceUiState.Error).throwable.message}")
         }
     }
 }
 
-@Composable
-internal fun MainScreen(
-    data: List<String>,
-    modifier: Modifier = Modifier,
-) {
-    Column(modifier) { data.forEach { Greeting(it) } }
-}
-
-@Composable
-fun Greeting(
-    name: String,
-    modifier: Modifier = Modifier,
-) {
-    Text(text = "Hello $name!", modifier = modifier)
-}
-
-@Preview(showBackground = true)
-@Composable
-fun MainScreenPreview() {
-    XCamTheme { MainScreen(listOf("Android", "CameraXViewfinder", "CameraEffect")) }
-}
-
-@Preview(showBackground = true, widthDp = 340)
-@Composable
-fun MainScreenPortraitPreview() {
-    XCamTheme { MainScreen(listOf("Android", "CameraXViewfinder", "CameraEffect")) }
-}

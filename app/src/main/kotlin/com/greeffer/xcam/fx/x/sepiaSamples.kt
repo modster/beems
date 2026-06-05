@@ -17,40 +17,40 @@ import androidx.annotation.RequiresApi
  * Method 1: Using ColorMatrix (Best for Bitmaps)You can alter the hue and saturation of a Bitmap by
  * applying a 5x5 matrix using a Paint object.Kotlin Example:
  */
-fun applySepiaFilter(sourceBitmap: Bitmap): Bitmap
+fun applySepiaFilter(sourceBitmap : Bitmap) : Bitmap
 {
     // Create a mutable bitmap for the result
     val resultBitmap = sourceBitmap.config?.let {
         Bitmap.createBitmap(
-            sourceBitmap.width,
-            sourceBitmap.height,
+            sourceBitmap.width ,
+            sourceBitmap.height ,
             it
         )
     } ?: return sourceBitmap
 
-        // Define the Sepia Color Matrix
-        val sepiaMatrix = ColorMatrix().apply {
-            setSaturation(0f) // Convert to grayscale first
-            val scaleMatrix = ColorMatrix(
-                floatArrayOf(
-                    1.2f, 0.5f, 0.1f, 0f, 0f,
-                    0.1f, 1.2f, 0.5f, 0f, 0f,
-                    0.1f, 0.5f, 1.2f, 0f, 0f,
-                    0f, 0f, 0f, 1f, 0f
-                )
+    // Define the Sepia Color Matrix
+    val sepiaMatrix = ColorMatrix().apply {
+        setSaturation(0f) // Convert to grayscale first
+        val scaleMatrix = ColorMatrix(
+            floatArrayOf(
+                1.2f , 0.5f , 0.1f , 0f , 0f ,
+                0.1f , 1.2f , 0.5f , 0f , 0f ,
+                0.1f , 0.5f , 1.2f , 0f , 0f ,
+                0f , 0f , 0f , 1f , 0f
             )
-            postConcat(scaleMatrix)
-        }
+        )
+        postConcat(scaleMatrix)
+    }
 
-        val paint = Paint().apply {
-            colorFilter = ColorMatrixColorFilter(sepiaMatrix)
-        }
+    val paint = Paint().apply {
+        colorFilter = ColorMatrixColorFilter(sepiaMatrix)
+    }
 
-        // Draw the image with the filter
-        val canvas = Canvas(resultBitmap)
-        canvas.drawBitmap(sourceBitmap, 0f, 0f, paint)
+    // Draw the image with the filter
+    val canvas = Canvas(resultBitmap)
+    canvas.drawBitmap(sourceBitmap , 0f , 0f , paint)
 
-        return resultBitmap
+    return resultBitmap
 }
 
 /**
@@ -68,9 +68,31 @@ const val sepiaEffectString = """
 """
 
 @RequiresApi(Build.VERSION_CODES.BAKLAVA)
-fun setCustomColorFilter(paint: Paint) {
+fun setCustomColorFilter(paint : Paint)
+{
     val filter = RuntimeColorFilter(sepiaEffectString)
     paint.colorFilter = filter
 }
 
+/**
+ * Applies sepia filter using RuntimeColorFilter (Android 16+).
+ */
+@RequiresApi(Build.VERSION_CODES.BAKLAVA)
+fun applySepiaFilterWithRuntimeColorFilter(sourceBitmap : Bitmap) : Bitmap
+{
+    val resultBitmap = sourceBitmap.config?.let {
+        Bitmap.createBitmap(
+            sourceBitmap.width ,
+            sourceBitmap.height ,
+            it
+        )
+    } ?: return sourceBitmap
 
+    val paint = Paint()
+    setCustomColorFilter(paint)
+
+    val canvas = Canvas(resultBitmap)
+    canvas.drawBitmap(sourceBitmap , 0f , 0f , paint)
+
+    return resultBitmap
+}

@@ -1,50 +1,48 @@
-# Graph Report - beems  (2026-06-05)
+# Graph Report - .  (2026-06-05)
 
 ## Corpus Check
-- 23 files · ~8,692 words
+- 40 files · ~8,693 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 144 nodes · 156 edges · 25 communities (17 shown, 8 thin omitted)
-- Extraction: 79% EXTRACTED · 19% INFERRED · 1% AMBIGUOUS · INFERRED: 30 edges (avg confidence: 0.77)
+- 173 nodes · 194 edges · 28 communities (19 shown, 9 thin omitted)
+- Extraction: 83% EXTRACTED · 16% INFERRED · 1% AMBIGUOUS · INFERRED: 31 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
-## Graph Freshness
-- Built from commit: `503c2a91`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
-
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Community 0|Community 0]]
-- [[_COMMUNITY_Community 1|Community 1]]
-- [[_COMMUNITY_Community 2|Community 2]]
-- [[_COMMUNITY_Community 3|Community 3]]
-- [[_COMMUNITY_Community 4|Community 4]]
-- [[_COMMUNITY_Community 5|Community 5]]
-- [[_COMMUNITY_Community 6|Community 6]]
-- [[_COMMUNITY_Community 7|Community 7]]
-- [[_COMMUNITY_Community 8|Community 8]]
-- [[_COMMUNITY_Community 9|Community 9]]
-- [[_COMMUNITY_Community 10|Community 10]]
-- [[_COMMUNITY_Community 11|Community 11]]
-- [[_COMMUNITY_Community 12|Community 12]]
-- [[_COMMUNITY_Community 13|Community 13]]
-- [[_COMMUNITY_Community 14|Community 14]]
-- [[_COMMUNITY_Community 16|Community 16]]
-- [[_COMMUNITY_Community 17|Community 17]]
-- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Navigation & Main UI|Navigation & Main UI]]
+- [[_COMMUNITY_Build Config & Data Layer|Build Config & Data Layer]]
+- [[_COMMUNITY_MainScreen ViewModel & State|MainScreen ViewModel & State]]
+- [[_COMMUNITY_CameraX & Media3 Pipeline|CameraX & Media3 Pipeline]]
+- [[_COMMUNITY_Architecture & Launcher Assets|Architecture & Launcher Assets]]
+- [[_COMMUNITY_Media3 GL Effects Subclasses|Media3 GL Effects Subclasses]]
+- [[_COMMUNITY_Sepia Shader Effect|Sepia Shader Effect]]
+- [[_COMMUNITY_Vignette Shader Effect|Vignette Shader Effect]]
+- [[_COMMUNITY_XCam ViewModel & State|XCam ViewModel & State]]
+- [[_COMMUNITY_Shader Base Classes|Shader Base Classes]]
+- [[_COMMUNITY_UI Previews & Theme|UI Previews & Theme]]
+- [[_COMMUNITY_Camera Scaffold & Filters|Camera Scaffold & Filters]]
+- [[_COMMUNITY_XScreen & XViewfinder|XScreen & XViewfinder]]
+- [[_COMMUNITY_ResourceUiState Extension|ResourceUiState Extension]]
+- [[_COMMUNITY_MainScreenTest|MainScreenTest]]
+- [[_COMMUNITY_DataRepository & XCameraFilter|DataRepository & XCameraFilter]]
+- [[_COMMUNITY_Navigation Keys|Navigation Keys]]
+- [[_COMMUNITY_CameraWithMedia3EffectScreen (Dead)|CameraWithMedia3EffectScreen (Dead)]]
+- [[_COMMUNITY_XEffect Executor|XEffect Executor]]
+- [[_COMMUNITY_XViewModel Surface Provider|XViewModel Surface Provider]]
+- [[_COMMUNITY_Root Gradle Build Script|Root Gradle Build Script]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `GlEffect (Direct Subclass of Effect)` - 10 edges
-2. `MainScreen()` - 7 edges
+2. `MainScreen()` - 8 edges
 3. `MainScreen Composable (ViewModel-driven)` - 6 edges
-4. `ClassicSepiaShaderProgram` - 5 edges
-5. `VignetterShaderProgram` - 5 edges
-6. `MainScreen Internal Composable (data renderer)` - 5 edges
-7. `MainScreenViewModel` - 5 edges
-8. `XViewfinder Composable` - 5 edges
-9. `CameraX Camera Pipeline` - 5 edges
-10. `fx Package (Effects/Utilities)` - 5 edges
+4. `CopyShaderProgram` - 6 edges
+5. `ClassicSepiaShaderProgram` - 5 edges
+6. `FilterSelectorCameraScreen()` - 5 edges
+7. `VignetterShaderProgram` - 5 edges
+8. `XCamScreen()` - 5 edges
+9. `XCam()` - 5 edges
+10. `Greeting()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `XEffect (Executor Utility)` --semantically_similar_to--> `androidx.media3.common.Effect (Marker Interface)`  [AMBIGUOUS] [semantically similar]
@@ -63,45 +61,53 @@
 - **CameraX Compose Viewfinder Pipeline** — xscreen_composable, xviewfinder_composable, cameraxviewfinder_compose, xviewmodel, surfacerequest, preview_camerax [INFERRED 0.85]
 - **Frame Geometry Control Pattern** — presentation, crop, glmatrixtransformation, matrixtransformation, cameraxviewfinder_compose [INFERRED 0.70]
 
-## Communities (25 total, 8 thin omitted)
+## Communities (28 total, 9 thin omitted)
 
-### Community 0 - "Community 0"
-Cohesion: 0.17
-Nodes (11): Greeting(), MainScreen(), MainScreenPortraitPreview(), MainScreenPreview(), XCamTheme(), FilterSelectorCameraScreen(), takePicture(), XCam() (+3 more)
+### Community 0 - "Navigation & Main UI"
+Cohesion: 0.21
+Nodes (9): Greeting(), MainScreen(), MainScreenPortraitPreview(), MainScreenPreview(), XCamTheme(), XCam(), XCamScreen(), MainActivity (+1 more)
 
-### Community 1 - "Community 1"
+### Community 1 - "Build Config & Data Layer"
 Cohesion: 0.14
 Nodes (16): App Module Build Script, DataRepository Interface, DefaultDataRepository, XCamScreen Composable, XEffect Executor Provider, XScreen (Navigation variant), XScreen (XViewModel variant), XViewModel (+8 more)
 
-### Community 2 - "Community 2"
+### Community 2 - "MainScreen ViewModel & State"
+Cohesion: 0.21
+Nodes (7): Error, Loading, MainScreenUiState, MainScreenViewModel, Success, FakeMyModelRepository, MainScreenViewModelTest
+
+### Community 3 - "CameraX & Media3 Pipeline"
 Cohesion: 0.27
 Nodes (12): AGENTS.md â€” Project Guidance, CameraX Camera Pipeline, CameraXViewfinder (Compose Integration), androidx.media3.common.Effect (Marker Interface), fx Package (Effects/Utilities), getDurationAfterEffectApplied(durationUs: Long): Long, Preview (CameraX Preview UseCase), SurfaceRequest (CameraX Frame Surface) (+4 more)
 
-### Community 3 - "Community 3"
-Cohesion: 0.24
-Nodes (7): Error, Loading, MainScreenUiState, MainScreenViewModel, Success, FakeMyModelRepository, MainScreenViewModelTest
-
-### Community 4 - "Community 4"
+### Community 4 - "Architecture & Launcher Assets"
 Cohesion: 0.29
 Nodes (11): AGENTS.md Project Guidance, Compose + ViewModel Architectural Pattern, DataRepository Interface, DefaultDataRepository, FakeMyModelRepository Test Double, App Launcher Icon Assets (multi-density), MainScreen Composable (ViewModel-driven), MainScreenViewModel (+3 more)
 
-### Community 5 - "Community 5"
+### Community 5 - "Media3 GL Effects Subclasses"
 Cohesion: 0.22
 Nodes (10): AlphaScale (Translucency Effect), Brightness (Frame Modifier), Contrast (RgbMatrix Subclass), Crop (Vertex Shader Crop), GlEffect (Direct Subclass of Effect), GlMatrixTransformation (4x4 Vertex Shader Matrix), GlShaderProgram, MatrixTransformation (3x3 Vertex Shader Matrix) (+2 more)
 
-### Community 6 - "Community 6"
-Cohesion: 0.25
+### Community 8 - "XCam ViewModel & State"
+Cohesion: 0.22
 Nodes (5): Error, Loading, Success, XCamUiState, XCamViewModel
 
-### Community 9 - "Community 9"
+### Community 10 - "UI Previews & Theme"
 Cohesion: 0.33
 Nodes (7): MainScreenTest (Compose UI Instrumentation), Greeting Composable, MainScreen Internal Composable (data renderer), MainScreenPortraitPreview Composable, MainScreenPreview Composable, Custom Material 3 Typography, XCamTheme Composable Wrapper
 
-### Community 10 - "Community 10"
+### Community 11 - "Camera Scaffold & Filters"
+Cohesion: 0.38
+Nodes (4): CameraScaffold(), takePicture(), FilterSelectorCameraScreen(), takePicture()
+
+### Community 12 - "XScreen & XViewfinder"
 Cohesion: 0.33
 Nodes (3): XCamScreen(), XScreen(), XViewfinder()
 
-### Community 11 - "Community 11"
+### Community 13 - "ResourceUiState Extension"
+Cohesion: 0.47
+Nodes (5): asResourceState(), Error, Loading, ResourceUiState, Success
+
+### Community 15 - "DataRepository & XCameraFilter"
 Cohesion: 0.5
 Nodes (3): DataRepository, DefaultDataRepository, XCameraFilter
 
@@ -112,9 +118,9 @@ Nodes (3): DataRepository, DefaultDataRepository, XCameraFilter
   app/src/main/kotlin/com/greeffer/xcam/fx/XEffect.kt · relation: semantically_similar_to
 
 ## Knowledge Gaps
-- **31 isolated node(s):** `Main`, `XCam`, `DataRepository`, `XCameraFilter`, `DefaultDataRepository` (+26 more)
+- **33 isolated node(s):** `Main`, `XCam`, `DataRepository`, `XCameraFilter`, `DefaultDataRepository` (+28 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -123,13 +129,13 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: calls) - confidence is low._
 - **What is the exact relationship between `androidx.media3.common.Effect (Marker Interface)` and `XEffect (Executor Utility)`?**
   _Edge tagged AMBIGUOUS (relation: semantically_similar_to) - confidence is low._
-- **Why does `MainScreen()` connect `Community 0` to `Community 12`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `Greeting()` connect `Community 0` to `Community 10`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
-- **Why does `GlEffect (Direct Subclass of Effect)` connect `Community 5` to `Community 2`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+- **Why does `Greeting()` connect `Navigation & Main UI` to `XScreen & XViewfinder`?**
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+- **Why does `MainScreen()` connect `Navigation & Main UI` to `MainScreenTest`?**
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+- **Why does `XCam()` connect `Navigation & Main UI` to `Camera Scaffold & Filters`?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Are the 3 inferred relationships involving `MainScreen()` (e.g. with `.setup()` and `MainNavigation()`) actually correct?**
   _`MainScreen()` has 3 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Main`, `XCam`, `DataRepository` to the rest of the system?**
-  _31 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _33 weakly-connected nodes found - possible documentation gaps or missing edges._

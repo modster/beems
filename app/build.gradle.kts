@@ -75,6 +75,7 @@ dependencies {
 
     // Tooling
     implementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.ui)
     // Instrumented tests
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.test.manifest)

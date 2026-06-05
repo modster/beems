@@ -7,7 +7,7 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 
-/** UI tests for [com.examplepackage com.greeffer.xcam.ui.main.MainScreen]. */
+/** UI tests for [com.greeffer.xcam.ui.main.MainScreen]. */
 class MainScreenTest {
     @get:Rule val composeTestRule = createAndroidComposeRule<ComponentActivity>()
 
