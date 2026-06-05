@@ -1,19 +1,19 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.compose.compiler)
-       alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
     // alias(libs.plugins.kotzilla) apply false
 }
 
 android {
   namespace = "com.greeffer.xcam"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
     applicationId = "com.greeffer.xcam"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
     }
@@ -40,6 +40,7 @@ android {
         excludes += "/META-INF/{AL2.0,LGPL2.1}"
       }
     }
+    buildToolsVersion = "37.0.0"
 }
 
 kotlin {
@@ -62,7 +63,7 @@ dependencies {
     implementation(libs.androidx.compose.material3)
 
     // CameraX
-  implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.camera2)
     implementation(libs.androidx.camera.compose)
     implementation(libs.androidx.camera.core)
     implementation(libs.androidx.camera.extensions)
@@ -70,9 +71,10 @@ dependencies {
     implementation(libs.androidx.camera.media3)
     implementation(libs.androidx.camera.video)
     implementation(libs.androidx.camera.view)
+    implementation(libs.androidx.media3.effect)
 
     // Tooling
-    debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.compose.ui.tooling)
     // Instrumented tests
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
@@ -91,10 +93,10 @@ dependencies {
     implementation(libs.androidx.navigation3.ui)
     implementation(libs.androidx.navigation3.runtime)
     implementation(libs.androidx.lifecycle.viewmodel.navigation3)
-    
-    
-    
-    
+
+
+
+
     // androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     // androidTestImplementation(libs.androidx.junit)
     // androidTestImplementation(platform(libs.androidx.compose.bom))

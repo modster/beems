@@ -10,13 +10,14 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation3.runtime.NavKey
 import com.greeffer.xcam.data.DefaultDataRepository
+import com.greeffer.xcam.fx.x.XCamScreen
 import com.greeffer.xcam.theme.XCamTheme
 
 @Composable
 fun MainScreen(
-    onItemClick: (NavKey) -> Unit,
-    modifier: Modifier = Modifier,
-    viewModel: MainScreenViewModel = viewModel { MainScreenViewModel(DefaultDataRepository()) },
+  onItemClick: (NavKey) -> Unit,
+  modifier: Modifier = Modifier,
+  viewModel: MainScreenViewModel = viewModel { MainScreenViewModel(DefaultDataRepository()) },
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     when (state) {
@@ -25,7 +26,9 @@ fun MainScreen(
         }
 
         is MainScreenUiState.Success -> {
-            MainScreen(data = (state as MainScreenUiState.Success).data, modifier = modifier)
+            XCamScreen(
+              onItemClick = onItemClick, modifier = modifier,
+            )
         }
 
         is MainScreenUiState.Error -> {

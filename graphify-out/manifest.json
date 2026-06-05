@@ -8,12 +8,12 @@
     "hash": "857faf4b42fc9e324fb40b7223f2a94a"
   },
   "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\settings.gradle.kts": {
-    "mtime": 1780452781.6644404,
-    "hash": "ae4e0a0adf459129eca193593e78c944"
+    "mtime": 1780638535.8829906,
+    "hash": "bb4dfaf0d5e6cd1432c9b3d35642f0b2"
   },
   "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\build.gradle.kts": {
-    "mtime": 1780485295.9847767,
-    "hash": "17004812c0d3691e77a5e4ca8f4ede47"
+    "mtime": 1780638744.961891,
+    "hash": "8f66506e3789f507448eb695362a54af"
   },
   "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\androidTest\\java\\com\\example\\empty_activity\\ui\\main\\MainScreenTest.kt": {
     "mtime": 1780485359.9811985,
@@ -24,32 +24,48 @@
     "hash": "820e81e3c33f35b1bbfd5b61cb4f47ac"
   },
   "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\Navigation.kt": {
-    "mtime": 1780485680.8633587,
-    "hash": "3bebc2fca27324b9642aa603bff1eab8"
+    "mtime": 1780598332.8015554,
+    "hash": "38aee278d0222d3a56ce43e75a3410d8"
   },
   "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\NavigationKeys.kt": {
     "mtime": 1780486375.8615725,
     "hash": "6c166d6c72bcaf1e55ca6c346b106404"
   },
   "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\data\\DataRepository.kt": {
-    "mtime": 1780485359.9954448,
-    "hash": "8c2089db23af57e45b57c7d44dfaa30c"
+    "mtime": 1780634849.255626,
+    "hash": "4c03618d49499419b35c246a9a276579"
   },
-  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\XEffect.kt": {
-    "mtime": 1780486317.5798795,
-    "hash": "49bb5ca62d1827c9903c2bb88db34c38"
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\x\\CameraWithMedia3EffectScreen.kt": {
+    "mtime": 1780635077.1472242,
+    "hash": "7a54e1e6017ad06b9fb4181ab85fcaeb"
   },
-  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\XScreen.kt": {
-    "mtime": 1780528915.9626243,
-    "hash": "c1ea74bf0815391209cdbe8612055c36"
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\x\\ClassicSepiaEffect.kt": {
+    "mtime": 1780636888.7321262,
+    "hash": "194ee573f07bcba8945c458a8820aa35"
   },
-  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\XViewfinder.kt": {
-    "mtime": 1780485712.8847785,
-    "hash": "199e38f4ed2aa26695623f339fa20729"
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\x\\FilterSelectorCameraScreen.kt": {
+    "mtime": 1780637241.3536644,
+    "hash": "05f8349db7167740b60c504633aad5bc"
   },
-  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\XViewModel.kt": {
-    "mtime": 1780485359.5588458,
-    "hash": "d059b1831b6629107575a72bf60960e6"
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\x\\sepiaSamples.kt": {
+    "mtime": 1780633995.2860794,
+    "hash": "f0a9754ed9da3f28765b00700427d51e"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\x\\VignetterShaderProgram.kt": {
+    "mtime": 1780628635.3565848,
+    "hash": "04f20ec904700ce4418f9378eaa426c3"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\x\\XCamScreen.kt": {
+    "mtime": 1780634849.2303133,
+    "hash": "eca6ab269a4d980f49b1b3a9b03d2505"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\x\\XCamViewModel.kt": {
+    "mtime": 1780605577.6422281,
+    "hash": "398da32b68f3cbeff3d436a1bdaedcc5"
+  },
+  "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\fx\\x\\XViewfinder.kt": {
+    "mtime": 1780602095.9837978,
+    "hash": "5e2b850bd9dc12008667266ffed61f2c"
   },
   "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\theme\\Color.kt": {
     "mtime": 1780485359.7450497,
@@ -64,8 +80,8 @@
     "hash": "189ddef9fc53f7978cf3aadba6de1a8a"
   },
   "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\ui\\main\\MainScreen.kt": {
-    "mtime": 1780487695.9605656,
-    "hash": "c0ea53bb3834bce45198dfdcadedcc40"
+    "mtime": 1780624781.5949461,
+    "hash": "3d402a4688514128e2281643c8501d12"
   },
   "C:\\Users\\User\\AndroidStudioProjects\\me\\beems\\app\\src\\main\\kotlin\\com\\greeffer\\xcam\\ui\\main\\MainScreenViewModel.kt": {
     "mtime": 1780485658.8947873,

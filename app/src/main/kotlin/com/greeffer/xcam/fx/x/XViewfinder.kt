@@ -14,7 +14,7 @@ import androidx.compose.ui.input.pointer.pointerInput
 
 @Composable
 fun XViewfinder(
-  vm: XViewModel,
+  vm: XCamViewModel,
   modifier: Modifier = Modifier,
 ) {
     val currentSurfaceRequest: SurfaceRequest? by vm.surfaceRequests.collectAsState()
