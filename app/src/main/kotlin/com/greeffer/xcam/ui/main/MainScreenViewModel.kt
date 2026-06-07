@@ -6,6 +6,7 @@ import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.core.SurfaceRequest
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.greeffer.xcam.data.DataRepository
@@ -20,67 +21,69 @@ import kotlinx.coroutines.flow.asStateFlow
 typealias MainScreenUiState = ResourceUiState<List<String>>
 
 class MainScreenViewModel(
-    dataRepository: DataRepository,
+  dataRepository: DataRepository,
+  context: Context,
 ): ViewModel()
 {
-    
+
+
     val uiState: StateFlow<MainScreenUiState> = dataRepository.data.asResourceState(viewModelScope)
-    
-    val xPreviewUseCase = Preview
-      .Builder()
-      .build()
-    
+
+
+    // CameraX use cases.
+    private val xPreviewUseCase: Preview = Preview.Builder().build()
+
+    private val xMainExecutor: Executor = ContextCompat.getMainExecutor(context.applicationContext)
+
     private val _surfaceRequests = MutableStateFlow<SurfaceRequest?>(null)
-    
+
     val surfaceRequests: StateFlow<SurfaceRequest?>
         get() = _surfaceRequests.asStateFlow()
-    
+
     init
     {
         produceSurfaceRequests(xPreviewUseCase)
     }
-    
+
     private fun produceSurfaceRequests(previewUseCase: Preview)
     {
-        // Always publish new SurfaceRequests from Preview
+        // Always publish new SurfaceRequests from Preview.
         previewUseCase.setSurfaceProvider { newSurfaceRequest ->
             _surfaceRequests.value = newSurfaceRequest
         }
     }
-    
-    
+
+
+    @Suppress("UNUSED_PARAMETER")
     fun onTap(offsetToSurface: Any)
     {
     }
-    
-    // fun focusOnPoint(surfaceBounds: Size, x: Float, y: Float) {
-    //     // Create point for CameraX's CameraControl.startFocusAndMetering() and submit...
-    // }
-    
-    // // ...
-    
-    fun capturePhoto(context: Context, imageCapture: ImageCapture, executor: Executor)
+
+    fun capturePhoto(
+      context: Context,
+      xImageCapture: ImageCapture
+    )
     {
         val outputFile = File(context.cacheDir, "media3_effect_${System.currentTimeMillis()}.jpg")
         val outputOptions = ImageCapture.OutputFileOptions
           .Builder(outputFile)
           .build()
-        
-        imageCapture.takePicture(
-            outputOptions,
-            executor,
-            object: ImageCapture.OnImageSavedCallback
-            {
-                override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults)
-                {
-                    Log.d("CameraMedia3", "Filtered photo saved successfully: ${outputFile.absolutePath}")
-                }
-                
-                override fun onError(exception: ImageCaptureException)
-                {
-                    Log.e("CameraMedia3", "Photo capture failed: ${exception.message}", exception)
-                }
-            }
+
+        xImageCapture.takePicture(
+          outputOptions,
+          xMainExecutor,
+          object: ImageCapture.OnImageSavedCallback
+          {
+              override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults)
+              {
+                  Log.d("CameraMedia3", "Filtered photo saved successfully: ${outputFile.absolutePath}")
+              }
+
+              override fun onError(exception: ImageCaptureException)
+              {
+                  Log.e("CameraMedia3", "Photo capture failed: ${exception.message}", exception)
+              }
+          }
         )
     }
 }

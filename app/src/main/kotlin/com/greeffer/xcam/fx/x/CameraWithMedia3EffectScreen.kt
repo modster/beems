@@ -1,7 +1,6 @@
 package com.greeffer.xcam.fx.x
 
 import android.Manifest
-import android.content.Context
 import android.content.pm.PackageManager
 import android.util.Log
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -13,7 +12,6 @@ import androidx.camera.core.CameraEffect.VIDEO_CAPTURE
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCapture.CAPTURE_MODE_MINIMIZE_LATENCY
-import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.core.SurfaceRequest
 import androidx.camera.core.UseCaseGroup
@@ -36,43 +34,38 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.LocalLifecycleOwner
-import androidx.lifecycle.viewModelScope
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.effect.RgbFilter
-import com.greeffer.xcam.ui.common.asResourceState
-import com.greeffer.xcam.ui.main.MainScreenUiState
 import com.greeffer.xcam.ui.main.MainScreenViewModel
-import java.io.File
-import java.util.concurrent.Executor
-import kotlinx.coroutines.flow.StateFlow
 
 @UnstableApi
+@Suppress("unused")
 @Composable
 fun CameraWithMedia3EffectScreen(
-    vm: MainScreenViewModel,
+  vm: MainScreenViewModel,
 )
 {
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
     val mainExecutor = remember { ContextCompat.getMainExecutor(context) }
-    
+
     // var surfaceRequest by remember { mutableStateOf<SurfaceRequest?>(null) }
     var surfaceRequest by remember { mutableStateOf<SurfaceRequest?>(null) }
-    
+
     var hasCameraPermission by remember {
         mutableStateOf(
-            ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED
+          ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED
         )
     }
-    
+
     var requestedPermission by remember { mutableStateOf(false) }
-    
+
     val permissionLauncher = rememberLauncherForActivityResult(
-        contract = ActivityResultContracts.RequestPermission()
+      contract = ActivityResultContracts.RequestPermission()
     ) { granted ->
         hasCameraPermission = granted
     }
-    
+
     // 1. Initialize CameraX UseCases
     val preview = remember {
         Preview
@@ -85,13 +78,13 @@ fun CameraWithMedia3EffectScreen(
           .setCaptureMode(CAPTURE_MODE_MINIMIZE_LATENCY)
           .build()
     }
-    
+
     // 2. Create the Media3 Effect
     val media3Effect = remember {
         Media3Effect(
-            context,
-            IMAGE_CAPTURE or PREVIEW or VIDEO_CAPTURE, // Applies to both live preview and taken photo
-            mainExecutor
+          context,
+          IMAGE_CAPTURE or PREVIEW or VIDEO_CAPTURE, // Applies to both live preview and taken photo
+          mainExecutor
         ) { error ->
             Log.e("CameraMedia3", "Effect processing error: ${error.message}", error)
         }.apply {
@@ -99,7 +92,7 @@ fun CameraWithMedia3EffectScreen(
             setEffects(listOf(RgbFilter.createGrayscaleFilter()))
         }
     }
-    
+
     LaunchedEffect(hasCameraPermission, requestedPermission) {
         if (! hasCameraPermission && ! requestedPermission)
         {
@@ -107,19 +100,19 @@ fun CameraWithMedia3EffectScreen(
             permissionLauncher.launch(Manifest.permission.CAMERA)
         }
     }
-    
+
     // 3. Bind the Camera Lifecycle
     LaunchedEffect(hasCameraPermission) {
         if (! hasCameraPermission) return@LaunchedEffect
-        
+
         preview.setSurfaceProvider { request ->
             surfaceRequest = request
         }
-        
+
         val cameraProvider = ProcessCameraProvider
           .getInstance(context)
           .get()
-        
+
         // Bundle your UseCases and Effects together into a UseCaseGroup
         val useCaseGroup = UseCaseGroup
           .Builder()
@@ -127,14 +120,14 @@ fun CameraWithMedia3EffectScreen(
           .addUseCase(imageCapture)
           .addEffect(media3Effect) // Attaches Media3 pipeline directly to the stream
           .build()
-        
+
         try
         {
             cameraProvider.unbindAll()
             cameraProvider.bindToLifecycle(
-                lifecycleOwner,
-                CameraSelector.DEFAULT_BACK_CAMERA,
-                useCaseGroup
+              lifecycleOwner,
+              CameraSelector.DEFAULT_BACK_CAMERA,
+              useCaseGroup
             )
         }
         catch (e: Exception)
@@ -142,48 +135,48 @@ fun CameraWithMedia3EffectScreen(
             Log.e("CameraMedia3", "Binding failed, lol", e)
         }
     }
-    
+
     // 4. Compose UI Layout
     Box(modifier = Modifier.fillMaxSize()) {
         if (! hasCameraPermission)
         {
             Button(
-                onClick = { permissionLauncher.launch(Manifest.permission.CAMERA) },
-                modifier = Modifier.align(Alignment.Center)
+              onClick = { permissionLauncher.launch(Manifest.permission.CAMERA) },
+              modifier = Modifier.align(Alignment.Center)
             ) {
                 Text("Grant camera permission")
             }
             return@Box
         }
-        
+
         // Official Compose-native Surface wrapper for CameraX
         surfaceRequest?.let { request ->
             CameraXViewfinder(
-                surfaceRequest = request,
-                modifier = Modifier.fillMaxSize()
+              surfaceRequest = request,
+              modifier = Modifier.fillMaxSize()
             )
         }
-        
+
         // Capture Action Button
         Button(
-            onClick = { vm.capturePhoto(context, imageCapture, mainExecutor) },
-            modifier = Modifier
-              .align(Alignment.BottomCenter)
-              .padding(bottom = 32.dp)
+          onClick = { vm.capturePhoto(context, imageCapture) },
+          modifier = Modifier
+            .align(Alignment.BottomCenter)
+            .padding(bottom = 32.dp)
         ) {
             Text("Capture Photo")
         }
     }
 }
 //
-// private fun capturePhoto(context: Context, imageCapture: ImageCapture, executor: Executor)
+// private fun capturePhoto(context: Context, xImageCapture: ImageCapture, executor: Executor)
 // {
 //     val outputFile = File(context.cacheDir, "media3_effect_${System.currentTimeMillis()}.jpg")
 //     val outputOptions = ImageCapture.OutputFileOptions
 //       .Builder(outputFile)
 //       .build()
 //
-//     imageCapture.takePicture(
+//     xImageCapture.takePicture(
 //         outputOptions,
 //         executor,
 //         object: ImageCapture.OnImageSavedCallback

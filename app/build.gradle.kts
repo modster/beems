@@ -3,15 +3,16 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.koin.compiler)
     // alias(libs.plugins.kotzilla) apply false
 }
 
 android {
-  namespace = "com.greeffer.xcam"
+    namespace = "com.greeffer.xcam"
     compileSdk = 37
 
     defaultConfig {
-    applicationId = "com.greeffer.xcam"
+        applicationId = "com.greeffer.xcam"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
@@ -21,7 +22,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt") , "proguard-rules.pro")
         }
     }
     compileOptions {
@@ -29,16 +30,16 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     buildFeatures {
-      compose = true
-      aidl = false
-      buildConfig = false
-      shaders = false
+        compose = true
+        aidl = false
+        buildConfig = false
+        shaders = false
     }
 
     packaging {
-      resources {
-        excludes += "/META-INF/{AL2.0,LGPL2.1}"
-      }
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
     buildToolsVersion = "37.0.0"
 }
@@ -58,7 +59,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
     // Compose
-    implementation(libs.androidx.compose.ui)
+    // implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
 
@@ -94,9 +95,6 @@ dependencies {
     implementation(libs.androidx.navigation3.ui)
     implementation(libs.androidx.navigation3.runtime)
     implementation(libs.androidx.lifecycle.viewmodel.navigation3)
-
-
-
 
     // androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     // androidTestImplementation(libs.androidx.junit)
@@ -136,8 +134,11 @@ dependencies {
     // implementation(libs.androidx.room.runtime)
     // implementation(libs.coil.compose)
     // implementation(libs.datastore.preferences)
-    // implementation(libs.koin.android)
-    // implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.core)
+    implementation(libs.koin.annotations)
+    // //    implementation(libs.koin.androidx.startup)
     // implementation(libs.koin.androidx.compose.navigation)
     // implementation(libs.koin.annotations)
     // implementation(libs.koin.compose)
@@ -150,6 +151,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.serialization.core)
     // implementation(libs.kotzilla.sdk.compose)
+
     // implementation(libs.material)
     // implementation(libs.media3.exoplayer)
     // implementation(libs.media3.ui.compose)
@@ -163,6 +165,5 @@ dependencies {
     // testImplementation(libs.androidx.junit)
     // testImplementation(libs.junit)
     testImplementation(libs.kotlinx.coroutines.test)
-    // //    implementation(libs.koin.androidx.startup)
 }
 

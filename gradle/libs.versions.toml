@@ -12,6 +12,8 @@ androidxTestEspresso = "3.7.0"
 coroutines = "1.10.2"
 junit = "4.13.2"
 kotlin = "2.3.20"
+koinVersion = "4.2.1"
+koinPluginVersion = "1.0.0"
 nav3Core = "1.0.1"
 material3 = "1.1.0"
 lifecycleViewmodelNav3 = "2.10.0"
@@ -63,9 +65,9 @@ androidx-camera-mlkit-vision = { module = "androidx.camera:camera-mlkit-vision",
 androidx-camera-video = { group = "androidx.camera", name = "camera-video", version.ref = "cameraVideo" }
 androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraView" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
-androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref="material3" }
-androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version = "1.9.5" }
-androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview"}
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+# androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version = "1.9.5" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4", version = "1.11.2" }
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version = "1.9.5" }
 androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version = "1.9.5" }
@@ -83,14 +85,20 @@ androidx-lifecycle-viewmodel-navigation3 = { module = "androidx.lifecycle:lifecy
 accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanistPermissions" }
 androidx-media3-effect = { group = "androidx.media3", name = "media3-effect", version.ref = "media3Effect" }
 androidx-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "ui" }
+# Koin for Android
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinVersion" }
+# Koin for Jetpack Compose
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinVersion" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinVersion" }
+koin-annotations = { module = "io.insert-koin:koin-annotations", version.ref = "koinVersion" }
 
 [plugins]
+koin-compiler = { id = "io.insert-koin.compiler.plugin", version.ref = "koinPluginVersion" }
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 kotzilla = { id = "io.kotzilla.kotzilla-plugin", version.ref = "kotzilla" }
-#koin-compiler = { id = "io.insert-koin.compiler.plugin", version.ref = "koin-annotations" }
-#koin-plugin-module-dsl = { id = "org.koin.plugin.module.dsl", version.ref = "koin-plugin-module-dsl" }
+# koin-plugin-module-dsl = { id = "org.koin.plugin.module.dsl", version.ref = "koin-plugin-module-dsl" }
 # android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
@@ -100,5 +108,3 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 # compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 #kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-koin-compiler = { id = "io.insert-koin.compiler.plugin", version.ref = "koin-plugin" }
-
