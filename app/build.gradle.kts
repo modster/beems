@@ -22,7 +22,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt") , "proguard-rules.pro")
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
     compileOptions {
@@ -50,6 +50,8 @@ kotlin {
 
 dependencies {
 
+    implementation(libs.androidx.compose.runtime)
+    implementation(libs.androidx.compose.ui.text.google.fonts)
     // Core Android dependencies
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -72,6 +74,7 @@ dependencies {
     implementation(libs.androidx.camera.media3)
     implementation(libs.androidx.camera.video)
     implementation(libs.androidx.camera.view)
+    implementation(libs.androidx.camera.effects)
     implementation(libs.androidx.media3.effect)
 
     // Tooling
@@ -114,14 +117,14 @@ dependencies {
     // implementation(libs.androidx.compose.adaptive)
     // implementation(libs.androidx.compose.adaptive.layout)
     // implementation(libs.androidx.compose.material.icons.core)
-    // implementation(libs.androidx.compose.material.icons.extended)
-    // implementation(libs.androidx.compose.material3)
-    // implementation(libs.androidx.compose.ui)
-    // implementation(libs.androidx.compose.ui.graphics)
-    // implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.compose.material.icons.extended)
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.compose.ui)
+    implementation(libs.androidx.compose.ui.graphics)
+    implementation(libs.androidx.compose.ui.tooling.preview)
     // implementation(libs.androidx.core.ktx)
-    // implementation(libs.androidx.datastore.core) //  implementation(project(":libs"))
-    // implementation(libs.androidx.exifinterface)
+    // implementation(libs.androidx.datastore.core)
+    implementation(libs.androidx.exifinterface)
     // implementation(libs.androidx.lifecycle.runtime.compose)
     // implementation(libs.androidx.lifecycle.runtime.ktx)
     // implementation(libs.androidx.lifecycle.viewmodel.compose)
@@ -132,12 +135,13 @@ dependencies {
     // implementation(libs.androidx.navigation3.ui)
     // implementation(libs.androidx.room.ktx)
     // implementation(libs.androidx.room.runtime)
-    // implementation(libs.coil.compose)
-    // implementation(libs.datastore.preferences)
+    implementation(libs.coil.compose)
+    implementation(libs.androidx.datastore.preferences)
     implementation(libs.koin.android)
     implementation(libs.koin.androidx.compose)
     implementation(libs.koin.core)
     implementation(libs.koin.annotations)
+
     // //    implementation(libs.koin.androidx.startup)
     // implementation(libs.koin.androidx.compose.navigation)
     // implementation(libs.koin.annotations)
@@ -150,6 +154,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.serialization.core)
+    implementation(libs.kotlinx.collections.immutable)
     // implementation(libs.kotzilla.sdk.compose)
 
     // implementation(libs.material)
@@ -158,12 +163,8 @@ dependencies {
     // implementation(libs.play.services.location)
     // implementation(platform(libs.androidx.compose.bom))
     // implementation(platform(libs.koin.bom))
-    // implementation(project(":core:data"))
-    // implementation(project(":core:domain"))
-    // implementation(project(":core:ui"))
     // testImplementation(libs.androidx.core)
     // testImplementation(libs.androidx.junit)
     // testImplementation(libs.junit)
     testImplementation(libs.kotlinx.coroutines.test)
 }
-

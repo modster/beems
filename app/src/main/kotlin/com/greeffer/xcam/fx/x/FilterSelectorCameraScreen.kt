@@ -11,6 +11,7 @@ import android.util.Log
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.OptIn
+import androidx.annotation.RequiresApi
 import androidx.camera.compose.CameraXViewfinder
 import androidx.camera.core.CameraEffect.IMAGE_CAPTURE
 import androidx.camera.core.CameraEffect.PREVIEW
@@ -60,9 +61,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.LocalLifecycleOwner
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.media3.common.util.UnstableApi
-import com.greeffer.xcam.MainViewModel
-import com.greeffer.xcam.data.XCameraFilter
+import com.greeffer.xcam.data.CameraCoreUtil.getAllCamerasPropertiesJSONArray
+import com.greeffer.xcam.data.CameraCoreUtil.writeFileExternalStorage
+import com.greeffer.xcam.data.XCameraFilters
 import com.greeffer.xcam.ui.main.MainScreenViewModel
 import java.io.File
 import java.text.SimpleDateFormat
@@ -70,12 +73,16 @@ import java.util.Date
 import java.util.Locale
 import org.koin.compose.viewmodel.koinViewModel
 
+@RequiresApi(Build.VERSION_CODES.P)
 @OptIn(UnstableApi::class)
 @Composable
 fun FilterSelectorCameraScreen(
-  vm: MainScreenViewModel = koinViewModel<MainScreenViewModel>()
+  vm: MainScreenViewModel = koinViewModel<MainScreenViewModel>(),
+  modifier: Modifier
 )
 {
+    val horizontalPadder = 8.dp
+
     val state by vm.uiState.collectAsStateWithLifecycle()
 
     val context = LocalContext.current
@@ -101,7 +108,7 @@ fun FilterSelectorCameraScreen(
     }
 
     // 1. Keep track of the currently selected filter asset
-    var selectedFilter: XCameraFilter by remember { mutableStateOf(XCameraFilter.NONE) }
+    var selectedFilter: XCameraFilters by remember { mutableStateOf(XCameraFilters.NONE) }
 
     val preview = remember { Preview.Builder().build() }
 
@@ -114,6 +121,7 @@ fun FilterSelectorCameraScreen(
           mainExecutor
         ) { error -> Log.e("FilterSelector", "Media3 execution error: ${error.message}", error) }
     }
+
 
     LaunchedEffect(hasCameraPermission, requestedPermission) {
         if (! hasCameraPermission && ! requestedPermission)
@@ -129,6 +137,24 @@ fun FilterSelectorCameraScreen(
 
         preview.setSurfaceProvider { request ->
             surfaceRequest = request
+        }
+
+        try
+        {
+            val cameraProvider = ProcessCameraProvider.getInstance(context).get()
+            val cameraInfos = cameraProvider.availableCameraInfos
+            val infos = getAllCamerasPropertiesJSONArray(cameraInfos)
+            val outputDir = context.getExternalFilesDir(null)
+            if (outputDir != null)
+            {
+                val outputFile = File(outputDir, "cameraInfos.json")
+                writeFileExternalStorage(outputFile.absolutePath, infos.toString(2))
+                Log.d("FilterSelector", "Saved camera info to: ${outputFile.absolutePath}")
+            }
+        }
+        catch (e: Exception)
+        {
+            Log.e("FilterSelector", "Failed to retrieve or save camera info", e)
         }
     }
 
@@ -149,6 +175,7 @@ fun FilterSelectorCameraScreen(
             cameraProvider.bindToLifecycle(
               lifecycleOwner, CameraSelector.DEFAULT_BACK_CAMERA, useCaseGroup
             )
+
         }
         catch (e: Exception)
         {
@@ -183,15 +210,17 @@ fun FilterSelectorCameraScreen(
             .align(Alignment.BottomCenter)
             .fillMaxWidth()
             .background(Color.Black.copy(alpha = 0.4f))
-            .padding(vertical = 24.dp), horizontalAlignment = Alignment.CenterHorizontally
+            .padding(vertical = 50.dp),
+          horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
             // 7. Dynamic Horizontal Filter Option Selector Bar
             LazyRow(
-              contentPadding = PaddingValues(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(12.dp),
+              contentPadding = PaddingValues(horizontal = horizontalPadder), horizontalArrangement = Arrangement
+              .spacedBy(horizontalPadder),
               modifier = Modifier.fillMaxWidth()
             ) {
-                items(XCameraFilter.entries.toTypedArray()) { filter ->
+                items(XCameraFilters.entries.toTypedArray()) { filter ->
                     val isSelected = filter == selectedFilter
 
                     Card(
@@ -199,7 +228,7 @@ fun FilterSelectorCameraScreen(
                         containerColor = if (isSelected) MaterialTheme.colorScheme.primary else Color.DarkGray
                       ), modifier = Modifier
                       .width(85.dp)
-                      .height(55.dp)
+                      .height(35.dp)
                       .clickable(
                         indication = null,
                         interactionSource = remember { MutableInteractionSource() }) { selectedFilter = filter }) {
@@ -217,13 +246,12 @@ fun FilterSelectorCameraScreen(
                 }
             }
 
-
-            Spacer(modifier = Modifier.height(20.dp))
+            Spacer(modifier = Modifier.height(30.dp))
 
             // 8. Traditional circular camera capture button
             Box(
               modifier = Modifier
-                .size(72.dp)
+                .size(90.dp)
                 .clip(CircleShape)
                 .background(Color.White)
                 .clickable(
@@ -234,10 +262,12 @@ fun FilterSelectorCameraScreen(
                 }, contentAlignment = Alignment.Center
             ) {
                 Box(
-                  modifier = Modifier.size(62.dp).clip(CircleShape).background(Color.Transparent)
-                    .run { // Give it a camera shutter concentric ring appearance
-                        this.background(Color.Black.copy(alpha = 0.1f))
-                    })
+                  modifier = Modifier
+                    .size(75.dp)
+                    .clip(CircleShape)
+                    .background(Color.Transparent)
+                    .background(Color.Red)
+                ) // Give it a camera shutter concentric ring appearance
             }
         }
     }

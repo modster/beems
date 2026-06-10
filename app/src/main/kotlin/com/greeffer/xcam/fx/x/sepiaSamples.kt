@@ -8,6 +8,7 @@ import android.graphics.Paint
 import android.graphics.RuntimeColorFilter
 import android.os.Build
 import androidx.annotation.RequiresApi
+import androidx.core.graphics.createBitmap
 
 /**
  * To apply a sepia filter in your Android app, you can use the ColorMatrixColorFilter to adjust the RGB values of your
@@ -17,27 +18,24 @@ import androidx.annotation.RequiresApi
  * Method 1: Using ColorMatrix (Best for Bitmaps)You can alter the hue and saturation of a Bitmap by
  * applying a 5x5 matrix using a Paint object.Kotlin Example:
  */
-fun applySepiaFilter(sourceBitmap : Bitmap) : Bitmap
+fun applySepiaFilter(sourceBitmap: Bitmap): Bitmap
 {
     // Create a mutable bitmap for the result
     val resultBitmap = sourceBitmap.config?.let {
-        Bitmap.createBitmap(
-            sourceBitmap.width ,
-            sourceBitmap.height ,
-            it
-        )
-    } ?: return sourceBitmap
+        createBitmap(sourceBitmap.width, sourceBitmap.height, it)
+    }
+                       ?: return sourceBitmap
 
     // Define the Sepia Color Matrix
     val sepiaMatrix = ColorMatrix().apply {
         setSaturation(0f) // Convert to grayscale first
         val scaleMatrix = ColorMatrix(
-            floatArrayOf(
-                1.2f , 0.5f , 0.1f , 0f , 0f ,
-                0.1f , 1.2f , 0.5f , 0f , 0f ,
-                0.1f , 0.5f , 1.2f , 0f , 0f ,
-                0f , 0f , 0f , 1f , 0f
-            )
+          floatArrayOf(
+            1.2f, 0.5f, 0.1f, 0f, 0f,
+            0.1f, 1.2f, 0.5f, 0f, 0f,
+            0.1f, 0.5f, 1.2f, 0f, 0f,
+            0f, 0f, 0f, 1f, 0f
+          )
         )
         postConcat(scaleMatrix)
     }
@@ -48,10 +46,11 @@ fun applySepiaFilter(sourceBitmap : Bitmap) : Bitmap
 
     // Draw the image with the filter
     val canvas = Canvas(resultBitmap)
-    canvas.drawBitmap(sourceBitmap , 0f , 0f , paint)
+    canvas.drawBitmap(sourceBitmap, 0f, 0f, paint)
 
     return resultBitmap
 }
+
 
 /**
  * Method 2: Using RuntimeColorFilter (Android 16+)If your app's minimum SDK targets the latest API (API level 16+),
@@ -67,32 +66,31 @@ const val sepiaEffectString = """
     }
 """
 
+
 @RequiresApi(Build.VERSION_CODES.BAKLAVA)
-fun setCustomColorFilter(paint : Paint)
+fun setCustomColorFilter(paint: Paint)
 {
     val filter = RuntimeColorFilter(sepiaEffectString)
     paint.colorFilter = filter
 }
 
+
 /**
  * Applies sepia filter using RuntimeColorFilter (Android 16+).
  */
 @RequiresApi(Build.VERSION_CODES.BAKLAVA)
-fun applySepiaFilterWithRuntimeColorFilter(sourceBitmap : Bitmap) : Bitmap
+fun applySepiaFilterWithRuntimeColorFilter(sourceBitmap: Bitmap): Bitmap
 {
     val resultBitmap = sourceBitmap.config?.let {
-        Bitmap.createBitmap(
-            sourceBitmap.width ,
-            sourceBitmap.height ,
-            it
-        )
-    } ?: return sourceBitmap
+        createBitmap(sourceBitmap.width, sourceBitmap.height, it)
+    }
+                       ?: return sourceBitmap
 
     val paint = Paint()
     setCustomColorFilter(paint)
 
     val canvas = Canvas(resultBitmap)
-    canvas.drawBitmap(sourceBitmap , 0f , 0f , paint)
+    canvas.drawBitmap(sourceBitmap, 0f, 0f, paint)
 
     return resultBitmap
 }

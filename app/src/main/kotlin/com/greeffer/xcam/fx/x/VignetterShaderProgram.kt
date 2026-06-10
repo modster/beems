@@ -14,7 +14,7 @@ class VignetterEffect : CopyShaderEffect(FRAGMENT_SHADER_ASSET_PATH)
         inputHeight : Int ,
     )
     {
-        glProgram.setFloatsUniform("uResolution" , floatArrayOf(inputWidth.toFloat() , inputHeight.toFloat()))
+        // No-op: vignette_fragment.glsl operates on normalized coordinates and doesn't require uResolution.
     }
 
     private companion object

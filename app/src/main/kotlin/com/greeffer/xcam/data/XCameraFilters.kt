@@ -10,8 +10,9 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 
 @OptIn(UnstableApi::class)
-enum class XCameraFilter(val displayName: String)
+enum class XCameraFilters(val displayName: String)
 {
+
     NONE("None"),
     GRAYSCALE("Grayscale"),
     INVERT("Invert"),
@@ -31,10 +32,11 @@ enum class XCameraFilter(val displayName: String)
     }
 }
 
-class DefaultDataRepository: DataRepository
+class XCameraFilterEntries: DataRepository
 {
+
     override val data: Flow<List<String>> = flowOf(
-        XCameraFilter.entries.map(XCameraFilter::displayName),
+      XCameraFilters.entries.map(XCameraFilters::displayName),
     )
 }
 

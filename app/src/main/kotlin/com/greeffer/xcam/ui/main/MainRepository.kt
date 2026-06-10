@@ -1,42 +1,48 @@
 package com.greeffer.xcam.ui.main
 
 import android.Manifest
+import android.content.Context
 import android.content.pm.PackageManager
-import androidx.activity.compose.rememberLauncherForActivityResult
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.core.content.ContextCompat
-import com.google.accompanist.permissions.PermissionState
-import kotlin.contracts.contract
-
 
 interface MainRepository
 {
-    
-    var permission: PermissionState
-    var hasPermission: Boolean
-    val permissionLauncher:
+
+
+    val hasCameraPermission: MutableState<Boolean>
+    val requestedPermission: MutableState<Boolean>
+
+    fun refreshCameraPermission()
+    fun onCameraPermissionResult(granted: Boolean)
 }
 
-class MainRepositoryImpl
+class MainRepositoryImpl(
+  private val context: Context,
+): MainRepository
 {
-    
-    
-    override hasCameraPermission = mutableStateOf(
-        ContextCompat.checkSelfPermission(
-            context,
-            Manifest.permission.CAMERA
-        ) == PackageManager.PERMISSION_GRANTED
-    )
-}
 
-var requestedPermission = { mutableStateOf(false) }
-val permissionLauncher = MutableStateOf(
-contract = ActivityResultContracts.RequestPermission () { granted ->
+
+    override val hasCameraPermission: MutableState<Boolean> = mutableStateOf(false)
+    override val requestedPermission: MutableState<Boolean> = mutableStateOf(false)
+
+    init
+    {
+        refreshCameraPermission()
+    }
+
+    override fun refreshCameraPermission()
+    {
+        hasCameraPermission.value = ContextCompat.checkSelfPermission(
+          context,
+          Manifest.permission.CAMERA,
+        ) == PackageManager.PERMISSION_GRANTED
+    }
+
+    override fun onCameraPermissionResult(granted: Boolean)
+    {
         hasCameraPermission.value = granted
     }
-    
-}
-}
 
+}

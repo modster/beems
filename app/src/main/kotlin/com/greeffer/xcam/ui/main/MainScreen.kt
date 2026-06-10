@@ -1,36 +1,64 @@
 package com.greeffer.xcam.ui.main
 
+import android.os.Build
+import androidx.annotation.RequiresApi
+import androidx.compose.foundation.gestures.detectTapGestures
+import androidx.compose.foundation.gestures.detectTransformGestures
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.greeffer.xcam.data.DefaultDataRepository
-import com.greeffer.xcam.fx.x.XCamScreen
+import androidx.navigation3.runtime.NavKey
+import com.greeffer.xcam.data.XCameraFilterEntries
+import com.greeffer.xcam.fx.x.FilterSelectorCameraScreen
 import com.greeffer.xcam.ui.common.ResourceUiState
 
+@RequiresApi(Build.VERSION_CODES.P)
 @Composable
 fun MainScreen(
-    viewModel: MainScreenViewModel = viewModel { MainScreenViewModel(DefaultDataRepository()) },
+  modifier: Modifier = Modifier,
+  @Suppress("UNUSED_PARAMETER")
+  onItemClick: (NavKey) -> Boolean,
 )
 {
-    val state by viewModel.uiState.collectAsStateWithLifecycle()
+    val vm = viewModel { MainScreenViewModel(XCameraFilterEntries()) }
+
+    val state by vm.uiState.collectAsStateWithLifecycle()
+
     when (state)
     {
-        ResourceUiState.Loading    ->
+        ResourceUiState.Loading ->
         {
             Text("Loading...")
         }
-        
-        is ResourceUiState.Success ->
+
+        is ResourceUiState.Success<*> ->
         {
-            XCamScreen()
+            FilterSelectorCameraScreen(
+              vm = vm,
+              modifier = modifier
+                .pointerInput(Unit) {
+                    detectTapGestures { offset ->
+                        vm.onTapToFocus(offset)
+                    }
+                }
+                .pointerInput(Unit) {
+                    detectTransformGestures { _, pan, zoom, _ ->
+                        // Pinch to zoom
+                        vm.onZoom(zoom)
+                        // Pan to move the zoomed preview.
+                        vm.onPan(pan)
+                    }
+                }
+            )
         }
-        
-        is ResourceUiState.Error   ->
+
+        is ResourceUiState.Error ->
         {
             Text("Error loading data: ${(state as ResourceUiState.Error).throwable.message}")
         }
     }
 }
-
